@@ -8,13 +8,11 @@ import {
     SocialContainer,
     SocialButton
 } from './styles';
+import Navigation from "./Navigation";
 import {
-    NavLink,
     NavbarBrand,
     Collapse,
-    NavbarToggler,
-    Nav,
-    NavItem,
+    NavbarToggler,    
 } from "reactstrap";
 
 const MyNavbar: React.FC = () => {
@@ -38,21 +36,7 @@ const MyNavbar: React.FC = () => {
                 </NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse className='justify-content-center' isOpen={isOpen} navbar>
-                    <Nav navbar>
-                        <NavItem active>
-                            <NavLink className='mr-2' href="/home/">Home</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='mr-2' href="/quem-sou">Quem Sou?</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='mr-2' href="/indicacoes">Indicações</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink className='mr-2' href="/contato">Contato</NavLink>
-                        </NavItem>
-                    </Nav>
-
+                    <Navigation navbar />
                 </Collapse>
                 <SocialContainer>
                     <SocialButton
