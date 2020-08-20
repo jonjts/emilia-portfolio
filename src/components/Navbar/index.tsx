@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
+
 
 import {
     Navbar,
     Container,
-    SocialContainer
+    SocialContainer,
+    SocialButton
 } from './styles';
 import {
     NavLink,
@@ -12,14 +15,20 @@ import {
     NavbarToggler,
     Nav,
     NavItem,
-    NavbarText,
 } from "reactstrap";
 
 const MyNavbar: React.FC = () => {
 
+    let history = useHistory();
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    function handleSendEmail(e: React.MouseEvent) {
+        e.preventDefault()
+        history.push('/contato')
+    }
 
     return (
         <Navbar color="light" light expand="md">
@@ -40,13 +49,32 @@ const MyNavbar: React.FC = () => {
                             <NavLink className='mr-2' href="/indicacoes">Indicações</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink className='mr-2' href="/quem-sou">Contato</NavLink>
+                            <NavLink className='mr-2' href="/contato">Contato</NavLink>
                         </NavItem>
                     </Nav>
 
                 </Collapse>
                 <SocialContainer>
-                    <NavbarText className='item'>Simple Text</NavbarText>
+                    <SocialButton
+                        target='_blank'
+                        href='https://www.instagram.com/anaemilia.onias/'
+                        color='primary'
+                    >
+                        <i className="fab fa-instagram"></i>
+                    </SocialButton>
+                    <SocialButton
+                        target='_blank'
+                        href='https://api.whatsapp.com/send?phone=557998309833&text=Ol%C3%A1%2C%20vi%20seu%20site%20e%20gostaria%20de%20marcar%20uma%20consulta...'
+                        color='primary'
+                    >
+                        <i className="fab fa-whatsapp"></i>
+                    </SocialButton>
+                    <SocialButton
+                        onClick={(e: React.MouseEvent) => handleSendEmail(e)}
+                        color='primary'
+                    >
+                        <i className="far fa-envelope"></i>
+                    </SocialButton>
                 </SocialContainer>
             </Container>
         </Navbar>

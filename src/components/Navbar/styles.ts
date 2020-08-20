@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import {
     Navbar as RootNavbar,
-    Container as RootContainer
+    Container as RootContainer,
+    Button
 } from "reactstrap";
 
 export const Navbar = styled(RootNavbar)`
@@ -84,6 +85,10 @@ export const Container = styled(RootContainer)`
 `
 
 export const SocialContainer = styled.div`
+
+    flex-direction: row;
+    display: flex;
+
     @media (max-width: 575.98px) { 
         display: flex;
         flex: 1;
@@ -101,5 +106,26 @@ export const SocialContainer = styled.div`
         justify-content: flex-end;
 
        
+    }
+`
+
+export const SocialButton = styled(Button)`
+    background-color: #ED578A !important;
+    border-color: #ED578A !important;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+
+    :hover{
+        background-color: #9D1140;
+        border-color: #9D1140;
+    }
+
+    .active {
+
     }
 `
