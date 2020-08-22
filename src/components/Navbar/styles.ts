@@ -5,8 +5,11 @@ import {
     Button
 } from "reactstrap";
 
-export const Navbar = styled(RootNavbar)`
-    background-color: transparent !important
+export const Navbar = styled(RootNavbar) <{ backgroundColor: string }>`
+    background-color: ${props => props.backgroundColor} !important;
+    position: fixed;
+    top: 0;
+    width: 100%
 `
 
 export const Container = styled(RootContainer)`
