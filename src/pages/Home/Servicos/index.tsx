@@ -12,19 +12,16 @@ import {
     Col
 } from 'reactstrap'
 import SubmitButton from '../../../components/buttons/Submit'
+import Header from "../../../components/Header";
 
 const Servicos: React.FC = () => {
 
     return (
         <Container>
-            <TitleContainer>
-                <label className='subtitle'>
-                    Meus Serviços
-                </label>
-                <label className='title'>
-                    Como posso te ajudar
-                </label>
-            </TitleContainer>
+            <Header
+                title='Como posso te ajudar'
+                subtitle='Meus Serviços'
+            />
             <Content>
                 <Row className='justify-content-center'>
                     <Col
