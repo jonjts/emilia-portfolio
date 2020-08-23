@@ -19,7 +19,7 @@ export const DireitosDetalhes = styled.div`
     flex-direction: row;
     justify-content: space-between;
 
-    label{
+    label {
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
@@ -28,6 +28,16 @@ export const DireitosDetalhes = styled.div`
         color: #ED578A;
         letter-spacing: 1.5px;
         text-transform: uppercase;
+
+        
+      @media (max-width: 575.98px) { 
+        text-align: center
+      }
+  
+    }
+
+    .row {
+        width: 100%;
     }
 `
 
@@ -57,4 +67,34 @@ export const ImgBrand = styled.img`
     margin-top: 48px;
     margin-bottom: 40px;
 
+`
+
+export const Casal = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+
+    label {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 575.98px) { 
+        justify-content: center;
+    }
+
+
+    @media (min-width: 767.98px) { 
+        justify-content: flex-end;
+    }
+
+
+    @media (min-width: 991.98px) { 
+        justify-content: flex-end;
+    }
+
+
+    @media (min-width: 1199.98px) {  
+        justify-content: flex-end;
+    }
 `

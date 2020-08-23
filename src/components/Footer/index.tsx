@@ -7,10 +7,15 @@ import {
     BranContainer,
     ImgBrand,
     DireitosContainer,
-    DireitosDetalhes
+    DireitosDetalhes,
+    Casal
 } from './styles';
 import Navigation from "../Navbar/Navigation";
 import LocalAtendimento from "./LocalAtendimento";
+import {
+    Row,
+    Col
+} from 'reactstrap'
 
 const Footer: React.FC = () => {
     return (
@@ -32,20 +37,34 @@ const Footer: React.FC = () => {
             <DireitosContainer>
                 <hr />
                 <DireitosDetalhes>
-                    <label>
-                        © 2020 • Todos Direitos Reservados
-                    </label>
-                    <div>
-                        <label>
-                            Criado por:
+                    <Row>
+                        <Col
+                            sm='12'
+                            md='12'
+                            lg='6'
+                            xl='6'
+                        >
+                            <label>
+                                © 2020 • Todos Direitos Reservados
                         </label>
-                        <img
-                            className='ml-2'
-                            src={require('../../assets/img/icons/cd.svg')}
-                            alt='cd'
-                        />
-                    </div>
+                        </Col>
+                        <Col className=''>
+                            <Casal>
+                                <label>
+                                    Criado por:
+                            </label>
+                                <img
+                                    className='ml-2'
+                                    src={require('../../assets/img/icons/cd.svg')}
+                                    alt='cd'
+                                />
+                            </Casal>
+                        </Col>
+                    </Row>
                 </DireitosDetalhes>
+
+
+
             </DireitosContainer>
         </Container>
     )
