@@ -5,8 +5,8 @@ import Footer from "../../components/Footer";
 import Cover from './Cover'
 import Phrase from './Phrase'
 import Servicos from './Servicos'
-import { Container } from './styles';
 import Antendimento from './Atendimento';
+import { Container } from './styles';
 
 const Home: React.FC = () => {
     return (
