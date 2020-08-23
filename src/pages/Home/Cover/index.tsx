@@ -6,10 +6,27 @@ import {
     RightImage,
     ContentContainer,
     ContentLabelContainer,
+    ImageContainer,
 } from './styles';
-import { Fade } from "reactstrap";
+import {
+    Fade,
+} from "reactstrap";
 
-const Presentation: React.FC<{ imageIndex: number }> = ({ imageIndex }) => {
+const itens = [{
+    path: require('../../../assets/img/ana-1.png'),
+    alt: 'Dr. Ana'
+}, {
+    path: require('../../../assets/img/ana-2.png'),
+    alt: 'Dr. Ana'
+}]
+
+interface IPresentation {
+    indexImage: number
+}
+
+const Presentation: React.FC<IPresentation> = ({ indexImage }) => {
+
+
     return (
         <Container>
             <LeftImage
@@ -24,12 +41,24 @@ const Presentation: React.FC<{ imageIndex: number }> = ({ imageIndex }) => {
                         Ginecologista
                     </h4>
                 </ContentLabelContainer>
-                <Fade>
-                    <img
-                        alt='ana emilia'
-                        src={require('../../../assets/img/ana-1.svg')}
-                    />
-                </Fade>
+                <ImageContainer>
+                    <Fade
+                        in={indexImage === 0}
+                        timeout={300}
+                    >
+                        <img
+                            src={itens[0].path}
+                            alt={itens[0].alt} />
+                    </Fade>
+                    <Fade
+                        in={indexImage === 1}
+                        timeout={300}
+                    >
+                        <img
+                            src={itens[1].path}
+                            alt={itens[1].alt} />
+                    </Fade>
+                </ImageContainer>
             </ContentContainer>
             <RightImage
                 src={require('../../../assets/img/folha.svg')}

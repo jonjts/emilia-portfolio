@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import NavBar from '../../components/Navbar'
 import Footer from "../../components/Footer";
@@ -8,11 +8,23 @@ import Servicos from './Servicos'
 import Antendimento from './Atendimento';
 import { Container } from './styles';
 
+
+
 const Home: React.FC = () => {
+
+    const [indexImage, setIndexImage] = useState(0)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIndexImage(indexImage === 0 ? 1 : 0)
+        }, 10000)
+    }, [indexImage])
+
+
     return (
         <Container>
             <NavBar />
-            <Cover imageIndex={0} />
+            <Cover indexImage={indexImage} />
             <Phrase />
             <Servicos />
             <Antendimento />

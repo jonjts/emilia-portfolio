@@ -106,7 +106,6 @@ export const ContentLabelContainer = styled.div`
             font-size: 32px
         }
     }
-    
 `
 
 export const Container = styled.div`
@@ -165,5 +164,14 @@ export const RightImage = styled.img`
     @media (max-width: 767.98px) { 
         visibility: hidden
     }
+`
 
+export const ImageContainer = styled.div`
+    width: 380px;
+
+    .fade{
+        position: absolute;
+        left: 50%;
+        top: 99px;
+    }
 `
