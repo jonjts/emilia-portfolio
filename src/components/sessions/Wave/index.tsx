@@ -1,34 +1,55 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
 import {
     Container,
     ContentContainer,
     WaveContainer,
     Wave,
+    WaveContainerFooter
 } from './styles';
 
-const WaveSession: React.FC<{ wavePath?: string, backgroundColor?: string }> = ({
+const WaveSession: React.FC<{
+    wavePath?: string,
+    backgroundColor?: string,
+    zIndex?: number,
+    styleContainer?: CSSProperties,
+    footerWavePath?: string
+}> = ({
     children,
     wavePath = require('../../../assets/img/cover-wave.svg'),
-    backgroundColor = '#fff'
+    footerWavePath,
+    backgroundColor = '#fff',
+    zIndex,
+    styleContainer
 }) => {
-    return (
-        <Container>
-            <WaveContainer>
-                <Wave
-                    alt='wave'
-                    src={wavePath}
-                />
-            </WaveContainer>
-            <ContentContainer
-                backgroundColor={backgroundColor}
-            >
+        return (
+            <Container style={styleContainer} >
+                <WaveContainer
+                    style={{ zIndex }}
+                >
+                    <Wave
+                        alt='wave'
+                        src={wavePath}
+                    />
+                </WaveContainer>
+                <ContentContainer
+                    backgroundColor={backgroundColor}
+                >
+                    {
+                        children
+                    }
+                </ContentContainer>
                 {
-                    children
+                    footerWavePath &&
+                    <WaveContainerFooter>
+                        <Wave
+                            alt='wave'
+                            src={footerWavePath}
+                        />
+                    </WaveContainerFooter>
                 }
-            </ContentContainer>
-        </Container>
-    )
-}
+            </Container>
+        )
+    }
 
 export default WaveSession;

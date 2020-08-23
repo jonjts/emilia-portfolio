@@ -12,7 +12,9 @@ import {
 
 const Phrase: React.FC = () => {
     return (
-        <SessionWave>
+        <SessionWave
+            footerWavePath={require('./footer.svg')}
+        >
             <ContentContainer>
                 <Row>
                     <Col
@@ -22,7 +24,6 @@ const Phrase: React.FC = () => {
                         xl={6}
                     >
                         <ImageA
-                            className='ana'
                             alt='Ana'
                             src={require('../../../assets/img/ana-a-1.png')}
                         />

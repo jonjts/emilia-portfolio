@@ -23,16 +23,20 @@ export const Roses = styled.img`
 
     @media (min-width: 991.98px) { 
        height: 100%
+       margin-bottom: -90px;
      }
 
 
     @media (min-width: 1199.98px) {  
-        height: 100%
+        height: 100%;
+        margin-bottom: -90px;
     }
 `
 
 
 export const Row = styled(RootRow)`
+    margin-right: 0;
+    margin-bottom: 100px;
 
     @media (max-width: 575.98px) { 
         flex-direction: column-reverse;
@@ -88,25 +92,29 @@ export const ContentContainer = styled.div`
 
 
 export const ImageA = styled.img`
-
     z-index: 100;
 
     @media (max-width: 575.98px) { 
        height: 200px;
+       margin-top: 0;
     }
 
 
     @media (min-width: 767.98px) { 
         height: 300px;
+        margin-top: 177px
     }
 
 
     @media (min-width: 991.98px) { 
-       height: 100%
+       height: 300px;
+       align-self: center;
+       margin-top: 0;
      }
 
 
     @media (min-width: 1199.98px) {  
-        height: 100%
+        height: 100%;
+        margin-top: 0;
     }
 `

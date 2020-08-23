@@ -29,6 +29,32 @@ export const ContentContainer = styled.div < { backgroundColor: string }> `
 export const WaveContainer = styled.div`
     width: 100%;
 `
+export const WaveContainerFooter = styled.div`
+    width: 100%;
+    position: absolute;
+    bottom:0;
+    z-index: 100;
+
+    @media (max-width: 575.98px) { 
+        
+    }
+
+
+    @media (min-width: 767.98px) { 
+        
+    }
+
+
+    @media (min-width: 991.98px) { 
+        
+     }
+
+
+    @media (min-width: 1199.98px) {  
+        margin-top: -100px;
+        z-index: 100
+    }
+`
 
 export const Wave = styled.img`
     width: 100%;
@@ -43,6 +69,7 @@ export const Container = styled.div`
     z-index: 100;
     flex-direction: column;
     margin-top: -250px;
+    position: relative;
 
     @media (max-width: 575.98px) { 
         min-height: 522px;
@@ -50,16 +77,16 @@ export const Container = styled.div`
 
 
     @media (min-width: 767.98px) { 
-        height: 700px;
+        
     }
 
 
     @media (min-width: 991.98px) { 
-        height: 856px;
+        
      }
 
 
     @media (min-width: 1199.98px) {  
-        height: 856px;
+        
     }
 `
