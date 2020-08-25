@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                             xl='6'
                         >
                             <label>
-                                © 2020 • Todos Direitos Reservados
+                               {`© ${(new Date()).getFullYear()} • Todos Direitos Reservados`}
                         </label>
                         </Col>
                         <Col className=''>

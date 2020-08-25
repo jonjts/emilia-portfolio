@@ -167,11 +167,48 @@ export const RightImage = styled.img`
 `
 
 export const ImageContainer = styled.div`
-    width: 380px;
+
+        @media (max-width: 575.98px) { 
+            width: 64%;
+        }
+
+
+        @media (min-width: 767.98px) { 
+            width: 380px;
+        }
+
+
+        @media (min-width: 991.98px) { 
+            width: 380px;
+        }
+
+
+        @media (min-width: 1199.98px) {  
+            width: 380px;
+        }
 
     .fade{
         position: absolute;
         left: 50%;
         top: 99px;
+
+        @media (max-width: 575.98px) { 
+            left: 35%;
+        }
+
+
+        @media (min-width: 767.98px) { 
+            left: 50%;
+        }
+
+
+        @media (min-width: 991.98px) { 
+            left: 50%;
+        }
+
+
+        @media (min-width: 1199.98px) {  
+            left: 50%;
+        }
     }
 `
