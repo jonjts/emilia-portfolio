@@ -20,7 +20,7 @@ const Navigation: React.FC<INavigation> = ({ navbar }) => {
             <NavItem
                 active={location.pathname === '/home'}
             >
-                <NavLink className='mr-2' href="/home/">Home</NavLink>
+                <NavLink className='mr-2' href="/home">Home</NavLink>
             </NavItem>
             <NavItem
                 active={location.pathname === '/quem-sou'}

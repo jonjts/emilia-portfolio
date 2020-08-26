@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Home from '../pages/Home'
+import Contato from '../pages/Contato'
 
 import {
     BrowserRouter as Router,
@@ -18,6 +20,9 @@ const Routes: React.FC = () => {
                 </Route>
                 <Route path="/home" exact>
                     <Home />
+                </Route>
+                <Route path="/contato" exact>
+                    <Contato />
                 </Route>
             </Switch>
         </Router>
