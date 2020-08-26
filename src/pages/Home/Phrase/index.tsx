@@ -10,14 +10,6 @@ import {
     Roses
 } from './styles';
 
-const itens = [{
-    path: require('../../../assets/img/ana-1.png'),
-    alt: 'Dr. Ana'
-}, {
-    path: require('../../../assets/img/ana-2.png'),
-    alt: 'Dr. Ana'
-}]
-
 const Phrase: React.FC = () => {
     return (
         <SessionWave
