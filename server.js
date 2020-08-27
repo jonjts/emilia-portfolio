@@ -37,7 +37,7 @@ app.post('/send-email', async (req, res) => {
 
 app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
 
-app.listen(port ? port : 4000, () =>
+app.listen(port || 4000, () =>
   console.log(`Servidor subiu com sucesso em http://localhost:${port}`)
 );
 

@@ -12,7 +12,8 @@ import {
     Label,
     FormGroup,
     FormFeedback,
-    Form
+    Form,
+    Spinner,
 } from "reactstrap"
 
 interface IError {
@@ -47,8 +48,7 @@ const ContatoForm: React.FC = () => {
                     subject: `${nome} <${email}>`,
                     assunto: assunto,
                     body: `
-                    Nome: ${nome}
-                    Email: ${email}
+                    Nome: ${nome}\nEmail: ${email}
 
 ${mensagem}
                     `
@@ -171,6 +171,14 @@ ${mensagem}
                             onClick={handleSendEmail}
                             disabled={sending}
                         >
+                            {
+                                sending &&
+                                <Spinner
+                                    color='link'
+                                    className='mr-2'
+                                    size='sm'
+                                />
+                            }
                             Enviar e-mail
                     </SubmitButton>
                     </FormGroup>

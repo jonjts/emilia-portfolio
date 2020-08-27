@@ -2,6 +2,7 @@ import React from 'react';
 
 import Home from '../pages/Home'
 import Contato from '../pages/Contato'
+import QuemSou from "../pages/QuemSou";
 
 import {
     BrowserRouter as Router,
@@ -20,6 +21,9 @@ const Routes: React.FC = () => {
                 </Route>
                 <Route path="/home" exact>
                     <Home />
+                </Route>
+                <Route path="/quem-sou" exact>
+                    <QuemSou />
                 </Route>
                 <Route path="/contato" exact>
                     <Contato />
