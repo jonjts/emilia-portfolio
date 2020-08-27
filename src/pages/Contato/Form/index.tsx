@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from "axios";
 
 import {
     Container,
@@ -12,8 +13,7 @@ import {
     FormGroup,
     FormFeedback,
     Form
-} from "reactstrap";
-import Contato from '..';
+} from "reactstrap"
 
 interface IError {
     nome?: string,
@@ -36,9 +36,36 @@ const ContatoForm: React.FC = () => {
         e.preventDefault()
         if (validForm()) {
             setSending(true)
-            //await sendEmail()
+            await sendEmail()
         }
     }
+
+    async function sendEmail() {
+        try {
+            await axios.post(`${process.env.REACT_APP_BASE_URL}/send-email`,
+                {
+                    subject: `${nome} <${email}>`,
+                    assunto: assunto,
+                    body: `
+                    Nome: ${nome}
+                    Email: ${email}
+
+${mensagem}
+                    `
+                })
+
+            setNome('')
+            setMensagem('')
+            setAssunto('')
+            setEmail('')
+        } catch (error) {
+            console.error(error)
+            alert('Não conseguimos enviar seu contato, tente novamente mais tarde')
+        }
+        setSending(false)
+
+    }
+
 
     function validForm(): boolean {
         const newError = {} as IError
