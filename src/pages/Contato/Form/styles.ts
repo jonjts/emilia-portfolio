@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import { Button } from 'reactstrap'
 
 export const Container = styled.div`
-  width: 66%;
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  flex-direction: column;
   h3 {
     font-style: normal;
     font-weight: 500;

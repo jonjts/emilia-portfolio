@@ -15,6 +15,7 @@ import {
     Form,
     Spinner,
 } from "reactstrap"
+import Sent from "./Sent";
 
 interface IError {
     nome?: string,
@@ -29,7 +30,7 @@ const ContatoForm: React.FC = () => {
     const [email, setEmail] = useState('')
     const [assunto, setAssunto] = useState('')
     const [mensagem, setMensagem] = useState('')
-    const [sending, setSending] = useState(false)
+    const [sending, setSending] = useState<Boolean | undefined>(undefined)
 
     const [error, setError] = useState<IError>({} as IError)
 
@@ -66,6 +67,10 @@ ${mensagem}
 
     }
 
+    function handleNewEmail(e: React.MouseEvent) {
+        e.preventDefault()
+        setSending(undefined)
+    }
 
     function validForm(): boolean {
         const newError = {} as IError
@@ -98,92 +103,99 @@ ${mensagem}
 
     return (
         <Container>
-            <h3>
-                Entre em Contato
+            {
+                sending === false ?
+                    <Sent onSendAgain={handleNewEmail} />
+                    :
+                    <>
+                        <h3>
+                            Entre em Contato
             </h3>
-            <InputsContainer>
-                <Form onSubmit={e => e.preventDefault()}>
-                    <FormGroup>
-                        <Label>
-                            Nome
-                    </Label>
-                        <Input
-                            required
-                            placeholder='Seu nome...'
-                            invalid={!!error.nome}
-                            value={nome}
-                            onChange={({ target }) => setNome(target.value)}
-                        />
-                        <FormFeedback >
-                            {error.nome}
-                        </FormFeedback>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>
-                            E-mail
-                    </Label>
-                        <Input
-                            type='email'
-                            required
-                            placeholder='Seu email...'
-                            invalid={!!error.email}
-                            value={email}
-                            onChange={({ target }) => setEmail(target.value)}
-                        />
-                        <FormFeedback >
-                            {error.email}
-                        </FormFeedback>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>
-                            Assunto
-                    </Label>
-                        <Input
-                            required
-                            placeholder='Assunto da mensagem...'
-                            invalid={!!error.assunto}
-                            value={assunto}
-                            onChange={({ target }) => setAssunto(target.value)}
-                        />
-                        <FormFeedback >
-                            {error.assunto}
-                        </FormFeedback>
-                    </FormGroup>
-                    <FormGroup>
-                        <Label>
-                            Mensagem
-                    </Label>
-                        <Input
-                            required
-                            type='textarea'
-                            placeholder='Sua mensagem...'
-                            invalid={!!error.mensagem}
-                            value={mensagem}
-                            onChange={({ target }) => setMensagem(target.value)}
-                        />
-                        <FormFeedback >
-                            {error.mensagem}
-                        </FormFeedback>
-                    </FormGroup>
-                    <FormGroup>
-                        <SubmitButton
-                            color='primary'
-                            onClick={handleSendEmail}
-                            disabled={sending}
-                        >
-                            {
-                                sending &&
-                                <Spinner
-                                    color='link'
-                                    className='mr-2'
-                                    size='sm'
-                                />
-                            }
-                            Enviar e-mail
-                    </SubmitButton>
-                    </FormGroup>
-                </Form>
-            </InputsContainer>
+                        <InputsContainer>
+                            <Form onSubmit={e => e.preventDefault()}>
+                                <FormGroup>
+                                    <Label>
+                                        Nome
+                                     </Label>
+                                    <Input
+                                        required
+                                        placeholder='Seu nome...'
+                                        invalid={!!error.nome}
+                                        value={nome}
+                                        onChange={({ target }) => setNome(target.value)}
+                                    />
+                                    <FormFeedback >
+                                        {error.nome}
+                                    </FormFeedback>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label>
+                                        E-mail
+                                        </Label>
+                                    <Input
+                                        type='email'
+                                        required
+                                        placeholder='Seu email...'
+                                        invalid={!!error.email}
+                                        value={email}
+                                        onChange={({ target }) => setEmail(target.value)}
+                                    />
+                                    <FormFeedback >
+                                        {error.email}
+                                    </FormFeedback>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label>
+                                        Assunto
+                                        </Label>
+                                    <Input
+                                        required
+                                        placeholder='Assunto da mensagem...'
+                                        invalid={!!error.assunto}
+                                        value={assunto}
+                                        onChange={({ target }) => setAssunto(target.value)}
+                                    />
+                                    <FormFeedback >
+                                        {error.assunto}
+                                    </FormFeedback>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label>
+                                        Mensagem
+                                        </Label>
+                                    <Input
+                                        required
+                                        type='textarea'
+                                        placeholder='Sua mensagem...'
+                                        invalid={!!error.mensagem}
+                                        value={mensagem}
+                                        onChange={({ target }) => setMensagem(target.value)}
+                                    />
+                                    <FormFeedback >
+                                        {error.mensagem}
+                                    </FormFeedback>
+                                </FormGroup>
+                                <FormGroup>
+                                    <SubmitButton
+                                        color='primary'
+                                        onClick={handleSendEmail}
+                                        disabled={sending}
+                                    >
+                                        {
+                                            sending &&
+                                            <Spinner
+                                                color='link'
+                                                className='mr-2'
+                                                size='sm'
+                                            />
+                                        }
+                                        Enviar e-mail
+                                    </SubmitButton>
+                                </FormGroup>
+                            </Form>
+                        </InputsContainer>
+                    </>
+            }
         </Container>
     )
 }

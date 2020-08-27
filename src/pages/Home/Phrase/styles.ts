@@ -114,7 +114,7 @@ export const ImageA = styled.img`
 
 
     @media (min-width: 1199.98px) {  
-        height: 100%;
+        height: 95%;
         margin-top: 0;
     }
 `

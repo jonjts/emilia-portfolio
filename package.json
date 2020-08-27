@@ -15,6 +15,7 @@
     "dotenv": "^8.2.0",
     "i18next": "^19.6.0",
     "i18next-xhr-backend": "^3.2.2",
+    "lottie-react-web": "^2.2.2",
     "node-sass": "^4.14.1",
     "nodemailer": "^6.4.10",
     "react": "^16.13.1",
