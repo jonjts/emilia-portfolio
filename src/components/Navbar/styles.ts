@@ -57,7 +57,7 @@ export const Container = styled(RootContainer)`
 
 
         @media (max-width: 767.98px) { 
-            background-image: url(${'./assets/img/icons/menu.png'})
+            background-image: url(${'./assets/img/icons/menu.svg'})
          }
 
     }
