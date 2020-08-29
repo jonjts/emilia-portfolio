@@ -28,7 +28,7 @@ export const ContentContainer = styled.div`
     @media (min-width: 991.98px) { 
         flex-direction: row;
         img {
-            height: 900px;
+            height: 800px;
             margin-top: 0px;
         }
      }
@@ -37,7 +37,7 @@ export const ContentContainer = styled.div`
     @media (min-width: 1199.98px) {  
     
         img {
-            height: 900px;
+            height: 800px;
             margin-top: 0px;
         }
     }
@@ -183,23 +183,26 @@ export const ImageContainer = styled.div`
         @media (max-width: 575.98px) { 
             display: flex;
             justify-content: center;
+            height: 460px;
         }
 
 
         @media (min-width: 767.98px) { 
             width: 380px;
+            height: 460px;
         }
 
 
         @media (min-width: 991.98px) { 
             width: 380px;
-            
+            height: 100%;
         }
 
 
         @media (min-width: 1199.98px) {  
             width: 380px;
             margin-top: -201px;
+            height: 100%;
         }
 
  
