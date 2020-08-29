@@ -20,24 +20,9 @@ const MyNavbar: React.FC = () => {
     let history = useHistory();
 
     const [isOpen, setIsOpen] = useState(false);
-    const [scrollState] = useState("top")
 
     const toggle = () => setIsOpen(!isOpen);
 
-    // useEffect(() => {
-    //     document.addEventListener("scroll", _e => {
-    //         var scrolled = document?.scrollingElement?.scrollTop
-    //         if (scrolled && scrolled >= 120) {
-    //             if (scrollState !== "amir") {
-    //                 setScrollState("amir")
-    //             }
-    //         } else {
-    //             if (scrollState !== "top") {
-    //                 setScrollState("top")
-    //             }
-    //         }
-    //     })
-    // }, [scrollState])
 
     function handleSendEmail(e: React.MouseEvent) {
         e.preventDefault()
@@ -50,7 +35,7 @@ const MyNavbar: React.FC = () => {
             className='sticky-top'
             color="light"
             light expand="md"
-            backgroundColor={scrollState === 'top' ? 'transparent' : '#fff'}
+            backgroundColor={!isOpen ? 'transparent' : '#fff'}
         >
             <Container >
                 <NavbarBrand style={{ width: 40, height: 40 }} href="/">
