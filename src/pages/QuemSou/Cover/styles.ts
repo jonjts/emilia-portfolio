@@ -28,7 +28,7 @@ export const ContentContainer = styled.div`
     @media (min-width: 991.98px) { 
         flex-direction: row;
         img {
-            height: 900px
+            height: 900px;
             margin-top: 0px;
         }
      }
@@ -37,8 +37,8 @@ export const ContentContainer = styled.div`
     @media (min-width: 1199.98px) {  
     
         img {
-            height: 900px
-            margin-top: 0px
+            height: 900px;
+            margin-top: 0px;
         }
     }
 `
