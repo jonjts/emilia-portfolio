@@ -15,6 +15,7 @@ export const Forma = styled.div`
 
     label{
         z-index: 10;
+        padding-top: 5px;
 
         font-family: Galeere;
         font-style: normal;

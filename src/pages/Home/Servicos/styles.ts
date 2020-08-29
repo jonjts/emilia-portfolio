@@ -12,7 +12,7 @@ export const Option = styled.div`
   width: 191px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 
   img{

@@ -11,19 +11,19 @@ import Header from '../../../components/Header'
 import InfoCard from '../../../components/cards/Info'
 
 const itens = [{
-    icon: require('../../../assets/img/icons/time.png'),
+    icon: require('../../../assets/img/icons/time.svg'),
     text: 'Os atendimentos são realizados sem pressa, podendo a duração estender-se ou encurtar-se de acordo com a necessidade.'
 }, {
-    icon: require('../../../assets/img/icons/chat.png'),
+    icon: require('../../../assets/img/icons/chat.svg'),
     text: 'Na consulta é colhida toda a história da mulher: suas queixas, passado de intercorrências e tratamentos, histórico familiar e hábitos.'
 }, {
-    icon: require('../../../assets/img/icons/citologia.png'),
+    icon: require('../../../assets/img/icons/citologia.svg'),
     text: 'É realizado o exame físico e a coleta de exame citológico e colposcópico dentre outros, caso seja identificada necessidade.'
 }, {
-    icon: require('../../../assets/img/icons/doc.png'),
+    icon: require('../../../assets/img/icons/doc.svg'),
     text: 'São então solicitados exames complementares e/ou analisados aqueles já realizados.'
 }, {
-    icon: require('../../../assets/img/icons/heart.png'),
+    icon: require('../../../assets/img/icons/heart.svg'),
     text: 'Nesse momento são também discutidos tratamentos, adequações de hábitos e demais questões específicas de cada paciente, considerando sua realidade, individualidade e objetivos.'
 }]
 

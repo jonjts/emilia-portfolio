@@ -32,7 +32,7 @@ const Servicos: React.FC = () => {
                         <Option>
                             <img
                                 alt='consulta'
-                                src={require('../../../assets/img/icons/consulta.png')}
+                                src={require('../../../assets/img/icons/consulta.svg')}
                             />
                             <label>
                                 Consultas
@@ -48,7 +48,7 @@ const Servicos: React.FC = () => {
                         <Option>
                             <img
                                 alt='citologia'
-                                src={require('../../../assets/img/icons/citologia.png')}
+                                src={require('../../../assets/img/icons/citologia.svg')}
                             />
                             <label>
                                 Citologia e
@@ -65,7 +65,7 @@ const Servicos: React.FC = () => {
                         <Option>
                             <img
                                 alt='utero'
-                                src={require('../../../assets/img/icons/utero.png')}
+                                src={require('../../../assets/img/icons/utero.svg')}
                             />
                             <label>
                                 Cauterização
@@ -83,7 +83,7 @@ const Servicos: React.FC = () => {
                         <Option>
                             <img
                                 alt='biopsia'
-                                src={require('../../../assets/img/icons/biopsia.png')}
+                                src={require('../../../assets/img/icons/biopsia.svg')}
                             />
                             <label>
                                 Biópsia de
@@ -100,7 +100,7 @@ const Servicos: React.FC = () => {
                         <Option>
                             <img
                                 alt='diu'
-                                src={require('../../../assets/img/icons/diu.png')}
+                                src={require('../../../assets/img/icons/diu.svg')}
                             />
                             <label>
                                 Inserção de
@@ -117,7 +117,7 @@ const Servicos: React.FC = () => {
                         <Option>
                             <img
                                 alt='outros'
-                                src={require('../../../assets/img/icons/others.png')}
+                                src={require('../../../assets/img/icons/others.svg')}
                             />
                             <label>
                                 Outros

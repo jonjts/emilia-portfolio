@@ -15,7 +15,7 @@ const Hexagono: React.FC<IHexagono> = ({ text }) => {
         <Container className='hexagono-container'>
             <Forma>
                 <Objeto
-                    src={require('../../assets/img/hexagono.png')}
+                    src={require('../../assets/img/hexagono.svg')}
                     alt='data'
                 />
                 <label>

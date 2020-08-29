@@ -88,7 +88,7 @@ export const HexagonoContainer = styled.div`
 `
 
 export const Line = styled.hr`
-    border: 2px solid #F7B5CC;
+    border: 1px solid #F7B5CC;
     transform: rotate(-90deg);
     width: 80px;
 

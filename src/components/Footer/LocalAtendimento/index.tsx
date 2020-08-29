@@ -35,7 +35,7 @@ const LocalAtendimento: React.FC = () => {
                 <InfoDetails>
                     <img
                         alt='whatsapp'
-                        src={require('../../../assets/img/icons/whatsapp.png')}
+                        src={require('../../../assets/img/icons/whatsapp.svg')}
                         width={32}
                         height={32}
                     />
@@ -46,7 +46,7 @@ const LocalAtendimento: React.FC = () => {
                 <InfoDetails>
                     <img
                         alt='whatsapp'
-                        src={require('../../../assets/img/icons/local.png')}
+                        src={require('../../../assets/img/icons/local.svg')}
                         width={32}
                         height={32}
                     />

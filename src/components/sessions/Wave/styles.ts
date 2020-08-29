@@ -28,6 +28,7 @@ export const ContentContainer = styled.div < { backgroundColor: string }> `
 
 export const WaveContainer = styled.div`
     width: 100%;
+    padding-bottom: -1px;
 `
 export const WaveContainerFooter = styled.div`
     width: 100%;

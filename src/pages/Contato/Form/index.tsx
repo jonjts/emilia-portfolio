@@ -59,11 +59,12 @@ ${mensagem}
             setMensagem('')
             setAssunto('')
             setEmail('')
+            setSending(false)
         } catch (error) {
             console.error(error)
+            setSending(undefined)
             alert('Não conseguimos enviar seu contato, tente novamente mais tarde')
         }
-        setSending(false)
 
     }
 
