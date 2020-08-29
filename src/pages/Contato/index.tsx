@@ -4,7 +4,7 @@ import NavBar from '../../components/Navbar'
 import Direitos from "../../components/Footer/Direitos";
 import Form from './Form'
 import Local from "./Local";
-import { Container } from './styles';
+import { Container, FormContainer, MapContainer } from './styles';
 import { Row, Col } from 'reactstrap'
 
 
@@ -32,12 +32,16 @@ const Contato: React.FC = () => {
                     xl='6'
                     className='d-flex justify-content-center p-0'
                 >
-                    <Form />
+                    <FormContainer>
+                        <Form />
+                    </FormContainer>
                 </Col>
                 <Col
                     className='d-flex justify-content-center p-0'
                 >
-                    <Local />
+                    <MapContainer>
+                        <Local />
+                    </MapContainer>
                 </Col>
             </Row>
             <Direitos />

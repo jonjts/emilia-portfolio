@@ -26,7 +26,15 @@ export const InputsContainer = styled.div`
         border: 1px solid #E8C9D9;
         box-sizing: border-box;
         border-radius: 10px;
-        width: 100%;
+
+        @media (max-width: 575.98px) { 
+            width: 100%;
+        }
+
+        @media (min-width: 580.98px) { 
+            max-width: 387px;
+        }
+
     }
 `
 

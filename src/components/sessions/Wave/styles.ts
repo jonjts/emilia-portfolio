@@ -59,6 +59,7 @@ export const WaveContainerFooter = styled.div`
 
 export const Wave = styled.img`
     width: 100%;
+    z-index: 10;
 `
 
 

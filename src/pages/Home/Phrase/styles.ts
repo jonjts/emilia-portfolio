@@ -92,7 +92,6 @@ export const ContentContainer = styled.div`
 
 
 export const ImageA = styled.img`
-    z-index: 100;
 
     @media (max-width: 575.98px) { 
        height: 200px;
@@ -102,7 +101,7 @@ export const ImageA = styled.img`
 
     @media (min-width: 767.98px) { 
         height: 300px;
-        margin-top: 177px
+        margin-top: 177px;
     }
 
 
@@ -114,7 +113,7 @@ export const ImageA = styled.img`
 
 
     @media (min-width: 1199.98px) {  
-        height: 95%;
+        height: 100%;
         margin-top: 0;
     }
 `
