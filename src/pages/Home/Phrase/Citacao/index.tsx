@@ -8,9 +8,9 @@ import {
     Assinatura
 } from './styles';
 
-const Citacao: React.FC = () => {
-    return (
-        <Container>
+const Citacao: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
+    isVisible ?
+        <Container className={isVisible ? 'animate__animated animate__fadeIn' : ''} >
             <div style={{ textAlign: 'center' }}>
                 <img
                     alt='aspas'
@@ -26,8 +26,10 @@ const Citacao: React.FC = () => {
                     Dra Ana Emília Onias
                 </Assinatura>
             </Footer>
-        </Container>
-    )
-}
+        </Container >
+        :
+        null
+)
+
 
 export default Citacao;

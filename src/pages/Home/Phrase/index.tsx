@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TrackVisibility from 'react-on-screen';
 import SessionWave from '../../../components/sessions/Wave'
 import Citacao from "./Citacao";
 import {
@@ -29,7 +30,10 @@ const Phrase: React.FC = () => {
                         />
                     </Col>
                     <Col className='align-items-center flex-column d-flex'>
-                        <Citacao />
+                        <TrackVisibility
+                            once>
+                            <Citacao />
+                        </TrackVisibility>
                     </Col>
                 </Row>
                 <Roses

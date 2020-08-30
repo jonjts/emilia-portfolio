@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TrackVisibility from 'react-on-screen';
 import {
     Container,
     RosesTop,
@@ -27,6 +28,25 @@ const itens = [{
     text: 'Nesse momento são também discutidos tratamentos, adequações de hábitos e demais questões específicas de cada paciente, considerando sua realidade, individualidade e objetivos.'
 }]
 
+const Information: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
+    isVisible ?
+        <>
+            {
+                itens.map((item, key) => (
+                    <InfoContainer className={isVisible ? 'animate__animated animate__fadeInUp' : ''} key={key}>
+                        <InfoCard
+                            key={key}
+                            icon={item.icon}
+                            text={item.text}
+                        />
+                    </InfoContainer>
+                ))
+            }
+        </>
+        :
+        null
+)
+
 const Atendimento: React.FC = () => {
     return (
         <Container>
@@ -44,18 +64,10 @@ const Atendimento: React.FC = () => {
                     subtitle='Como funcionam os atendimentos'
                 />
             </HeaderContainer>
-
-            {
-                itens.map((item, key) => (
-                    <InfoContainer>
-                        <InfoCard
-                            key={key}
-                            icon={item.icon}
-                            text={item.text}
-                        />
-                    </InfoContainer>
-                ))
-            }
+            <TrackVisibility once>
+                <Information />
+                
+            </TrackVisibility>
 
         </Container>
     )

@@ -30,10 +30,13 @@ const Presentation: React.FC<IPresentation> = ({ indexImage }) => {
     return (
         <Container>
             <LeftImage
+                className='animate__animated animate__fadeIn'
                 src={require('../../../assets/img/cover-left.svg')}
             />
             <ContentContainer>
-                <ContentLabelContainer>
+                <ContentLabelContainer
+                    className='animate__animated animate__fadeInUp'
+                >
                     <h1>
                         Dra Ana Emília Onias
                     </h1>
@@ -61,6 +64,7 @@ const Presentation: React.FC<IPresentation> = ({ indexImage }) => {
                 </ImageContainer>
             </ContentContainer>
             <RightImage
+                className='animate__animated animate__fadeIn'
                 src={require('../../../assets/img/folha.svg')}
             />
         </Container>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TrackVisibility from 'react-on-screen';
 import {
     Container,
     Content,
@@ -13,6 +14,116 @@ import {
 import SubmitButton from '../../../components/buttons/Submit'
 import Header from "../../../components/Header";
 
+const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
+    isVisible ?
+        <Row className='justify-content-center animate__animated animate__fadeInUp'>
+            <Col
+                sm='6'
+                lg='2'
+                xl='2'
+                className='justify-content-center d-flex'
+            >
+                <Option>
+                    <img
+                        alt='consulta'
+                        src={require('../../../assets/img/icons/consulta.svg')}
+                    />
+                    <label>
+                        Consultas
+                        </label>
+                </Option>
+            </Col>
+            <Col
+                sm='6'
+                lg='2'
+                xl='2'
+                className='justify-content-center d-flex'
+            >
+                <Option>
+                    <img
+                        alt='citologia'
+                        src={require('../../../assets/img/icons/citologia.svg')}
+                    />
+                    <label>
+                        Citologia e
+                        Colposcopia
+                        </label>
+                </Option>
+            </Col>
+            <Col
+                sm='6'
+                lg='2'
+                xl='2'
+                className='justify-content-center d-flex'
+            >
+                <Option>
+                    <img
+                        alt='utero'
+                        src={require('../../../assets/img/icons/utero.svg')}
+                    />
+                    <label>
+                        Cauterização
+                        de colo uterino
+                        e vulva
+                        </label>
+                </Option>
+            </Col>
+            <Col
+                sm='6'
+                lg='2'
+                xl='2'
+                className='justify-content-center d-flex'
+            >
+                <Option>
+                    <img
+                        alt='biopsia'
+                        src={require('../../../assets/img/icons/biopsia.svg')}
+                    />
+                    <label>
+                        Biópsia de
+                        colo uterino
+                        </label>
+                </Option>
+            </Col>
+            <Col
+                sm='6'
+                lg='2'
+                xl='2'
+                className='justify-content-center d-flex'
+            >
+                <Option>
+                    <img
+                        alt='diu'
+                        src={require('../../../assets/img/icons/diu.svg')}
+                    />
+                    <label>
+                        Inserção de
+                        DIUs
+                        </label>
+                </Option>
+            </Col>
+            <Col
+                sm='6'
+                lg='2'
+                xl='2'
+                className='justify-content-center d-flex'
+            >
+                <Option>
+                    <img
+                        alt='outros'
+                        src={require('../../../assets/img/icons/others.svg')}
+                    />
+                    <label>
+                        Outros
+                        Serviços
+                        </label>
+                </Option>
+            </Col>
+        </Row>
+        :
+        null
+)
+
 const Servicos: React.FC = () => {
 
     return (
@@ -22,110 +133,11 @@ const Servicos: React.FC = () => {
                 subtitle='Meus Serviços'
             />
             <Content>
-                <Row className='justify-content-center'>
-                    <Col
-                        sm='6'
-                        lg='2'
-                        xl='2'
-                        className='justify-content-center d-flex'
-                    >
-                        <Option>
-                            <img
-                                alt='consulta'
-                                src={require('../../../assets/img/icons/consulta.svg')}
-                            />
-                            <label>
-                                Consultas
-                            </label>
-                        </Option>
-                    </Col>
-                    <Col
-                        sm='6'
-                        lg='2'
-                        xl='2'
-                        className='justify-content-center d-flex'
-                    >
-                        <Option>
-                            <img
-                                alt='citologia'
-                                src={require('../../../assets/img/icons/citologia.svg')}
-                            />
-                            <label>
-                                Citologia e
-                                Colposcopia
-                            </label>
-                        </Option>
-                    </Col>
-                    <Col
-                        sm='6'
-                        lg='2'
-                        xl='2'
-                        className='justify-content-center d-flex'
-                    >
-                        <Option>
-                            <img
-                                alt='utero'
-                                src={require('../../../assets/img/icons/utero.svg')}
-                            />
-                            <label>
-                                Cauterização
-                                de colo uterino
-                                e vulva
-                            </label>
-                        </Option>
-                    </Col>
-                    <Col
-                        sm='6'
-                        lg='2'
-                        xl='2'
-                        className='justify-content-center d-flex'
-                    >
-                        <Option>
-                            <img
-                                alt='biopsia'
-                                src={require('../../../assets/img/icons/biopsia.svg')}
-                            />
-                            <label>
-                                Biópsia de
-                                colo uterino
-                            </label>
-                        </Option>
-                    </Col>
-                    <Col
-                        sm='6'
-                        lg='2'
-                        xl='2'
-                        className='justify-content-center d-flex'
-                    >
-                        <Option>
-                            <img
-                                alt='diu'
-                                src={require('../../../assets/img/icons/diu.svg')}
-                            />
-                            <label>
-                                Inserção de
-                                DIUs
-                            </label>
-                        </Option>
-                    </Col>
-                    <Col
-                        sm='6'
-                        lg='2'
-                        xl='2'
-                        className='justify-content-center d-flex'
-                    >
-                        <Option>
-                            <img
-                                alt='outros'
-                                src={require('../../../assets/img/icons/others.svg')}
-                            />
-                            <label>
-                                Outros
-                                Serviços
-                            </label>
-                        </Option>
-                    </Col>
-                </Row>
+                <TrackVisibility
+                    once
+                >
+                    <RowContent />
+                </TrackVisibility>
             </Content>
             <ContatoContainer>
                 <SubmitButton

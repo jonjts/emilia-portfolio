@@ -10,6 +10,7 @@ export const Container = styled.div`
   max-width: 666px;
   padding-top: 36px;
 
+
    label {
     font-family: Montserrat;
     font-style: normal;
