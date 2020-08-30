@@ -56,14 +56,14 @@ export const DescricaoCurriculo = styled.label`
 
         @media (min-width: 991.98px) { 
             flex: 6;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
             margin-top: 0px;
         }
 
 
         @media (min-width: 1199.98px) {  
             flex: 6;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
             margin-top: 0px;
         }
 `

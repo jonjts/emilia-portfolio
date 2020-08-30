@@ -25,8 +25,8 @@ const Servicos: React.FC = () => {
                 <Row className='justify-content-center'>
                     <Col
                         sm='6'
-                        lg='auto'
-                        xl='auto'
+                        lg='2'
+                        xl='2'
                         className='justify-content-center d-flex'
                     >
                         <Option>
@@ -41,8 +41,8 @@ const Servicos: React.FC = () => {
                     </Col>
                     <Col
                         sm='6'
-                        lg='auto'
-                        xl='auto'
+                        lg='2'
+                        xl='2'
                         className='justify-content-center d-flex'
                     >
                         <Option>
@@ -58,8 +58,8 @@ const Servicos: React.FC = () => {
                     </Col>
                     <Col
                         sm='6'
-                        lg='auto'
-                        xl='auto'
+                        lg='2'
+                        xl='2'
                         className='justify-content-center d-flex'
                     >
                         <Option>
@@ -76,8 +76,8 @@ const Servicos: React.FC = () => {
                     </Col>
                     <Col
                         sm='6'
-                        lg='auto'
-                        xl='auto'
+                        lg='2'
+                        xl='2'
                         className='justify-content-center d-flex'
                     >
                         <Option>
@@ -93,8 +93,8 @@ const Servicos: React.FC = () => {
                     </Col>
                     <Col
                         sm='6'
-                        lg='auto'
-                        xl='auto'
+                        lg='2'
+                        xl='2'
                         className='justify-content-center d-flex'
                     >
                         <Option>
@@ -110,8 +110,8 @@ const Servicos: React.FC = () => {
                     </Col>
                     <Col
                         sm='6'
-                        lg='auto'
-                        xl='auto'
+                        lg='2'
+                        xl='2'
                         className='justify-content-center d-flex'
                     >
                         <Option>

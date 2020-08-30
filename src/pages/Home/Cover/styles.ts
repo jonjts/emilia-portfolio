@@ -9,7 +9,7 @@ export const ContentContainer = styled.div`
     z-index: 100;
 
     @media (max-width: 575.98px) { 
-
+        height: 100%;
         justify-content: flex-end;
         img {
             height: 400px;
@@ -18,7 +18,7 @@ export const ContentContainer = styled.div`
     }
 
     @media (min-width: 580.98px) { 
-     
+        height: 100%;
         img {
             height: 700px;
             margin-top: 0px
@@ -27,19 +27,20 @@ export const ContentContainer = styled.div`
     
 
     @media (min-width: 991.98px) { 
-    
+        height: 555px;
         img {
-            height: 900px
-            margin-top: 0px
+            height: 900px;
+            margin-top: 0px;
         }
      }
 
 
     @media (min-width: 1199.98px) {  
-    
+        height: 555px;
+
         img {
-            height: 900px
-            margin-top: 0px
+            height: 900px;
+            margin-top: 0px;
         }
     }
 `
@@ -48,6 +49,7 @@ export const ContentLabelContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     display: flex;
+    margin-top: 54px;
 
     h1 {
         color: #ED578A
@@ -59,7 +61,6 @@ export const ContentLabelContainer = styled.div`
 
     @media (max-width: 575.98px) { 
         width: 100px;
-        margin-top: -188px;
         h1 {
             font-size: 32px
         }
@@ -71,7 +72,7 @@ export const ContentLabelContainer = styled.div`
 
     @media (min-width: 767.98px) { 
         width: 437px;
-        margin-top: -250px;
+      
         h1 {
             font-size: 92px;
         }
@@ -84,7 +85,7 @@ export const ContentLabelContainer = styled.div`
 
     @media (min-width: 991.98px) { 
         width: 437px;
-        margin-top: -250px;
+        margin-top: 200px;
         h1 {
             font-size: 92px;
         }
@@ -97,7 +98,7 @@ export const ContentLabelContainer = styled.div`
 
     @media (min-width: 1199.98px) {  
         width: 437px;
-        margin-top: -250px;
+        margin-top: 200px;
         h1 {
             font-size: 92px;
         }

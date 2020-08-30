@@ -3,7 +3,6 @@ import React from 'react';
 import Map from '../../../components/Map'
 import {
     Card,
-    MapContainer,
     MapPosition,
     MapDescription,
     ContatoButton,

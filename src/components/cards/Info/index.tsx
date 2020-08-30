@@ -22,7 +22,8 @@ const Info: React.FC<IInfo> = ({ icon, text }) => {
         <>
             {transitions.map(({ item, key, props }) =>
                 item && < animated.div style={props} key={key}>
-                    <Container>
+                    <Container 
+                    >
                         <img
                             alt='icon'
                             src={icon}

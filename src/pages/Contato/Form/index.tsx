@@ -120,7 +120,6 @@ ${mensagem}
                                      </Label>
                                     <Input
                                         required
-                                        placeholder='Seu nome...'
                                         invalid={!!error.nome}
                                         value={nome}
                                         onChange={({ target }) => setNome(target.value)}
@@ -136,7 +135,6 @@ ${mensagem}
                                     <Input
                                         type='email'
                                         required
-                                        placeholder='Seu email...'
                                         invalid={!!error.email}
                                         value={email}
                                         onChange={({ target }) => setEmail(target.value)}
@@ -151,7 +149,6 @@ ${mensagem}
                                         </Label>
                                     <Input
                                         required
-                                        placeholder='Assunto da mensagem...'
                                         invalid={!!error.assunto}
                                         value={assunto}
                                         onChange={({ target }) => setAssunto(target.value)}
@@ -167,7 +164,6 @@ ${mensagem}
                                     <Input
                                         required
                                         type='textarea'
-                                        placeholder='Sua mensagem...'
                                         invalid={!!error.mensagem}
                                         value={mensagem}
                                         onChange={({ target }) => setMensagem(target.value)}

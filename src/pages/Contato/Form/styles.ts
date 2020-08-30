@@ -19,13 +19,35 @@ export const InputsContainer = styled.div`
     margin-bottom: 32px;
 
     label{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
         font-size: 12px;
+        line-height: 150%;
+        /* identical to box height, or 18px */
+
+        letter-spacing: 0.4px;
+
+        /* Black */
+
+        color: #1E0D16;
     }
 
     textarea, input {
         border: 1px solid #E8C9D9;
         box-sizing: border-box;
         border-radius: 10px;
+
+        :focus{
+            background: #FFFFFF;
+            /* Primary/Pink */
+
+            border: 1px solid #ED578A;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 10px rgba(237, 87, 138, 0.15);
+            border-radius: 10px;
+        }
+        
 
         @media (max-width: 575.98px) { 
             width: 100%;
@@ -45,6 +67,7 @@ export const SubmitButton = styled(Button)`
     border-color: #ED578A !important;
     border-radius: 50px;
     padding: 8px 24px 8px 24px;
+    margin-top: 40px;
 
     :hover{
         background-color: #9D1140 !important;
