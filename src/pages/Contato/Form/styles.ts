@@ -47,7 +47,7 @@ export const SubmitButton = styled(Button)`
     padding: 8px 24px 8px 24px;
 
     :hover{
-        background-color: #9D1140;
-        border-color: #9D1140;
+        background-color: #9D1140 !important;
+        border-color: #9D1140 !important;
     }
 `;

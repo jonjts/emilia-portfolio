@@ -22,7 +22,7 @@ const LocalAtendimento: React.FC = () => {
             />
             <RosaLeft
                 alt='bordar'
-                src={require('../../../assets/img/folha.svg')}
+                src={require('../../../assets/img/graveto.svg')}
             />
             <Header
                 title='Agende uma Consulta'
@@ -66,7 +66,7 @@ const LocalAtendimento: React.FC = () => {
             </ActionContainer>
             <RosaRight
                 alt='bordar'
-                src={require('../../../assets/img/folha.svg')}
+                src={require('../../../assets/img/graveto.svg')}
             />
             <BorderRight
                 alt='bordar'

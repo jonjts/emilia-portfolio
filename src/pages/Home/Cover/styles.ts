@@ -54,7 +54,7 @@ export const ContentLabelContainer = styled.div`
     }
 
     h4 {
-        color: #ED578A
+        color: #C982A7
     }
 
     @media (max-width: 575.98px) { 
@@ -153,6 +153,7 @@ export const LeftImage = styled.img`
 
 export const RightImage = styled.img`
     position: absolute;
+    height: 70%;
     right: 0;
     bottom: 20%;
 

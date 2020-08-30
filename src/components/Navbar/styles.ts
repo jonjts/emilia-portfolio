@@ -57,7 +57,7 @@ export const Container = styled(RootContainer)`
 
 
         @media (max-width: 767.98px) { 
-            background-image: url(${'./assets/img/icons/menu.svg'})
+            background-image: url(${'./assets/img/icons/menu.svg'});
          }
 
     }
@@ -69,7 +69,7 @@ export const Container = styled(RootContainer)`
 
 
         @media (max-width: 767.98px) { 
-            border-color: transparent
+            border-color: transparent;
          }
 
 
@@ -81,14 +81,13 @@ export const Container = styled(RootContainer)`
 
 
     @media (max-width: 575.98px) { 
-        justify-content: normal !important
+        justify-content: normal !important;
     }
 
 
 `
 
 export const SocialContainer = styled.div`
-
     flex-direction: row;
     display: flex;
 
@@ -107,8 +106,6 @@ export const SocialContainer = styled.div`
         display: flex;
         flex: 1;
         justify-content: flex-end;
-
-       
     }
 `
 
@@ -122,11 +119,12 @@ export const SocialButton = styled(Button)`
     align-items: center;
     justify-content: center;
     margin-right: 12px;
-
+    
     :hover{
-        background-color: #9D1140;
-        border-color: #9D1140;
+        background-color: #9D1140 !important;
+        border-color: #9D1140 !important;
     }
+
 
     .active {
 

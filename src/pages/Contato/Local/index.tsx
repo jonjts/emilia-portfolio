@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Map from '../../../components/Map'
 import {
     Card,
     MapContainer,
@@ -12,9 +13,10 @@ import {
 const Local: React.FC = () => {
     return (
         <Card>
-            <MapContainer>
-                <iframe title='mapa' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.178177747249!2d-37.067498135249615!3d-10.949909642203915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7a35992cf278ae96!2sHospital%20Primavera%20-%20Reumatologia!5e0!3m2!1spt-BR!2sbr!4v1598486359669!5m2!1spt-BR!2sbr" width='100%' height='400px' allowFullScreen style={{ border: 10 }}></iframe>
-            </MapContainer>
+            <Map
+                width='100%'
+                height='400px'
+            />
             <MapDescription>
                 <label className='subtitle'>
                     Hospital Primavera
