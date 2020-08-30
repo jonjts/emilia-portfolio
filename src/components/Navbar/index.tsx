@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 
 
@@ -18,10 +18,17 @@ import {
 const MyNavbar: React.FC = () => {
 
     let history = useHistory();
-
+    const [scrolled, setScrolled] = useState(0)
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    useEffect(() => {
+        window.onscroll = () => {
+            setScrolled(window.pageYOffset)
+            console.log(window.pageYOffset)
+        }
+    }, [])
 
 
     function handleSendEmail(e: React.MouseEvent) {
@@ -35,7 +42,7 @@ const MyNavbar: React.FC = () => {
             className='sticky-top'
             color="light"
             light expand="md"
-            backgroundColor={!isOpen ? 'transparent' : '#fff'}
+            backgroundColor={scrolled < 200 ? 'transparent' : '#fff'}
         >
             <Container >
                 <NavbarBrand style={{ width: 40, height: 40 }} href="/">
