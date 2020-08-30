@@ -26,7 +26,6 @@ const MyNavbar: React.FC = () => {
     useEffect(() => {
         window.onscroll = () => {
             setScrolled(window.pageYOffset)
-            console.log(window.pageYOffset)
         }
     }, [])
 
