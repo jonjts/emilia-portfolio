@@ -2,6 +2,7 @@
   "name": "emilia-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@material-ui/icons": "^4.9.1",
     "@react-google-maps/api": "^1.9.12",
