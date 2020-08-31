@@ -18,7 +18,7 @@ const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
     isVisible ?
         <Row className='justify-content-center animate__animated animate__fadeInUp'>
             <Col
-                sm='6'
+                sm='2'
                 lg='2'
                 xl='2'
                 className='justify-content-center d-flex'
@@ -34,7 +34,7 @@ const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
                 </Option>
             </Col>
             <Col
-                sm='6'
+                sm='2'
                 lg='2'
                 xl='2'
                 className='justify-content-center d-flex'
@@ -51,7 +51,7 @@ const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
                 </Option>
             </Col>
             <Col
-                sm='6'
+                sm='2'
                 lg='2'
                 xl='2'
                 className='justify-content-center d-flex'
@@ -69,7 +69,7 @@ const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
                 </Option>
             </Col>
             <Col
-                sm='6'
+                sm='2'
                 lg='2'
                 xl='2'
                 className='justify-content-center d-flex'
@@ -86,7 +86,7 @@ const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
                 </Option>
             </Col>
             <Col
-                sm='6'
+                sm='2'
                 lg='2'
                 xl='2'
                 className='justify-content-center d-flex'
@@ -103,7 +103,7 @@ const RowContent: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
                 </Option>
             </Col>
             <Col
-                sm='6'
+                sm='2'
                 lg='2'
                 xl='2'
                 className='justify-content-center d-flex'

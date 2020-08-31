@@ -26,6 +26,7 @@ const MyNavbar: React.FC = () => {
     useEffect(() => {
         window.onscroll = () => {
             setScrolled(window.pageYOffset)
+            console.log(200)
         }
     }, [])
 
@@ -41,13 +42,13 @@ const MyNavbar: React.FC = () => {
             className='sticky-top'
             color="light"
             light expand="md"
-            backgroundColor={scrolled < 200 ? 'transparent' : '#fff'}
+            backgroundColor={(!isOpen && scrolled < 200) ? 'transparent' : '#fff'}
         >
             <Container >
+                <NavbarToggler onClick={toggle} />
                 <NavbarBrand style={{ width: 40, height: 40 }} href="/">
                     <img src={require('../../assets/img/brand/logo.png')} width="30" height="30" className="d-inline-block align-top" alt="" loading="lazy" />
                 </NavbarBrand>
-                <NavbarToggler onClick={toggle} />
                 <Collapse className='justify-content-center' isOpen={isOpen} navbar>
                     <Navigation navbar />
                 </Collapse>

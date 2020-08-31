@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TrackVisibility from 'react-on-screen';
 import SessionWave from '../../../components/sessions/Wave'
 import Header from '../../../components/Header'
 import Hexagono from '../../../components/Hexagono'
@@ -33,6 +34,34 @@ const curriculo = [
     }
 ]
 
+const Itens: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
+    isVisible ?
+        <>
+            {
+                curriculo.map((item, key) => (
+                    <CenterCurriculo key={key} className='animate__animated animate__fadeInUp'>
+                        <CurriculoContainer>
+                            <HexagonoContainer>
+                                <Hexagono
+                                    text={`${item.year}`}
+                                />
+                                {
+                                    item.year !== 2018 &&
+                                    <Line />
+                                }
+                            </HexagonoContainer>
+                            <DescricaoCurriculo>
+                                {item.text}
+                            </DescricaoCurriculo>
+                        </CurriculoContainer>
+                    </CenterCurriculo>
+                ))
+            }
+        </>
+        :
+        null
+)
+
 const Trajetoria: React.FC = () => {
     return (
         <SessionWave
@@ -46,26 +75,12 @@ const Trajetoria: React.FC = () => {
                     alt='borboleta'
                     src={require('../../../assets/img/borboleta.png')}
                 />
-                {
-                    curriculo.map((item, key) => (
-                        <CenterCurriculo key={key}>
-                            <CurriculoContainer>
-                                <HexagonoContainer>
-                                    <Hexagono
-                                        text={`${item.year}`}
-                                    />
-                                    {
-                                        item.year !== 2018 &&
-                                        <Line />
-                                    }
-                                </HexagonoContainer>
-                                <DescricaoCurriculo>
-                                    {item.text}
-                                </DescricaoCurriculo>
-                            </CurriculoContainer>
-                        </CenterCurriculo>
-                    ))
-                }
+                <TrackVisibility
+                    once
+                    style={{ minWidth: 100, minHeight: 100 }}
+                >
+                    <Itens />
+                </TrackVisibility>
                 <RosesBottom
                     alt='roses'
                     src={require('../../../assets/img/roses-bottom-right.png')}

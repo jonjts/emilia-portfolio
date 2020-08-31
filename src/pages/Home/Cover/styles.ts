@@ -8,12 +8,17 @@ export const ContentContainer = styled.div`
     width: 100%;
     z-index: 100;
 
+    img{
+        animation-duration: 2s;
+        position: absolute;
+    }
+
     @media (max-width: 575.98px) { 
         height: 100%;
         justify-content: flex-end;
         img {
             height: 400px;
-            margin-top: -72px
+            margin-top: -72px;
         }
     }
 
@@ -60,7 +65,8 @@ export const ContentLabelContainer = styled.div`
     }
 
     @media (max-width: 575.98px) { 
-        width: 100px;
+        width: 151px;
+        margin-top: 100px;
         h1 {
             font-size: 32px
         }
@@ -140,14 +146,13 @@ export const LeftImage = styled.img`
     position: absolute;
     left: 0;
     object-fit: contain;
+    content: url('./assets/img/cover-left.svg');
 
-    @media (max-width: 575.98px) { 
-        
-    }
+   
 
 
     @media (max-width: 767.98px) { 
-        width: 100%
+        width: 100%;
     }
 
 `
@@ -164,14 +169,14 @@ export const RightImage = styled.img`
 
 
     @media (max-width: 767.98px) { 
-        visibility: hidden
+        visibility: hidden;
     }
 `
 
 export const ImageContainer = styled.div`
 
         @media (max-width: 575.98px) { 
-            width: 64%;
+            width: 47%;
         }
 
 
@@ -189,13 +194,14 @@ export const ImageContainer = styled.div`
             width: 380px;
         }
 
-    .fade{
+    div {
         position: absolute;
         left: 50%;
         top: 99px;
 
         @media (max-width: 575.98px) { 
-            left: 35%;
+            left: 46%;
+            padding-top: 50px;
         }
 
 

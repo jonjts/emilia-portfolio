@@ -7,6 +7,10 @@ export const Container = styled.div`
 export const DireitosContainer = styled.div`
     padding: 72px 58px 0px 58px;
 
+    @media (max-width: 575.98px) { 
+        padding-top: 0px;
+    }
+
     hr {
         background-color: #F7B5CC;
     }
@@ -17,7 +21,11 @@ export const DireitosDetalhes = styled.div`
     padding-bottom: 23px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    @media (max-width: 575.98px) { 
+        justify-content: center;
+    }
+    
 
     label {
         font-family: Montserrat;

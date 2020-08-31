@@ -60,6 +60,7 @@ export const Container = styled.div`
 `;
 
 export const Content = styled.div`
+  min-height: 300px;
   
     @media (max-width: 575.98px) { 
         padding: 40px 17px 40px 17px;
@@ -72,12 +73,12 @@ export const Content = styled.div`
   
   
       @media (min-width: 991.98px) { 
-        padding: 88px 127px 88px 127px;
+        padding: 88px 127px 0px 127px;
        }
   
   
       @media (min-width: 1199.98px) {  
-        padding: 88px 127px 88px 127px;
+        padding: 88px 127px 0px 127px;
       }
 `;
 

@@ -31,7 +31,7 @@ const Presentation: React.FC = () => {
                         xl='6'
                         className='d-flex justify-content-center p-0'
                     >
-                        <ContentLabelContainer>
+                        <ContentLabelContainer className='animate__animated animate__fadeIn'>
                             <h1>
                                 Quem sou?
                     </h1>
@@ -46,6 +46,7 @@ const Presentation: React.FC = () => {
                     <Col className='p-0'>
                         <ImageContainer>
                             <img
+                                className='animate__animated animate__fadeIn'
                                 src={require('../../../assets/img/ana-quem-sou.png')}
                                 alt='Dr. Ana' />
                         </ImageContainer>
@@ -55,6 +56,7 @@ const Presentation: React.FC = () => {
 
             </ContentContainer>
             <RightImage
+                className='animate__animated animate__fadeIn'
                 src={require('../../../assets/img/background-quem-sou.png')}
             />
         </Container>

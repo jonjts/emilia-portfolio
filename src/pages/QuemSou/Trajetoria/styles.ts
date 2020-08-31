@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   margin-bottom: 100px;
   margin-top: 60px;
+  min-height: 500px;
 `;
 
 
@@ -45,26 +46,24 @@ export const DescricaoCurriculo = styled.label`
 
         @media (max-width: 575.98px) { 
             margin-bottom: 20px;
-            margin-top: 20px;
         }
 
         @media (min-width: 580.98px) { 
             margin-bottom: 20px;
-            margin-top: 20px;
         }
         
 
         @media (min-width: 991.98px) { 
             flex: 6;
-            margin-bottom: 20px;
-            margin-top: 0px;
+            /* margin-bottom: 20px;
+            margin-top: 0px; */
         }
 
 
         @media (min-width: 1199.98px) {  
             flex: 6;
-            margin-bottom: 20px;
-            margin-top: 0px;
+            /* margin-bottom: 20px;
+            margin-top: 0px; */
         }
 `
 export const CenterCurriculo = styled.div`
@@ -92,25 +91,7 @@ export const Line = styled.hr`
     transform: rotate(-90deg);
     width: 80px;
 
-    @media (max-width: 575.98px) { 
-        display: none;
-
-    }
-
-    @media (min-width: 580.98px) { 
-        display: none;
-    }
-    
-
-    @media (min-width: 991.98px) { 
-        display: block;
-     }
-
-
-    @media (min-width: 1199.98px) {  
-        display: block;
-    }
-
+   
 `
 
 export const CurriculoContainer = styled.div`
@@ -121,13 +102,14 @@ export const CurriculoContainer = styled.div`
     align-items: center;
     flex-direction: row;
 
-    @media (max-width: 575.98px) { 
-        flex-direction: column;
 
+
+    @media (max-width: 575.98px) { 
+        flex-direction: row;
     }
 
     @media (min-width: 580.98px) { 
-        flex-direction: column;
+        flex-direction: row;
     }
     
 

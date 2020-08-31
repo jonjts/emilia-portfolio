@@ -14,17 +14,23 @@ import {
 import Header from '../../Header'
 import Submit from '../../buttons/Submit';
 
-const Rosa: React.FC<{ isVisible?: boolean, isLeft: boolean }> = ({ isVisible, isLeft }) => (
+const RosaRightAnimi: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
     isVisible ?
-        isLeft ? <RosaLeft
+        <RosaRight
             className='animate__animated animate__fadeIn'
             alt='bordar'
             src={require('../../../assets/img/graveto.svg')}
-        /> : <RosaRight
-                className='animate__animated animate__fadeIn'
-                alt='bordar'
-                src={require('../../../assets/img/graveto.svg')}
-            />
+        />
+        : null
+)
+
+const RosaLeftAnimi: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
+    isVisible ?
+        <RosaLeft
+            className='animate__animated animate__fadeIn'
+            alt='bordar'
+            src={require('../../../assets/img/graveto.svg')}
+        />
         :
         null
 )
@@ -39,7 +45,7 @@ const LocalAtendimento: React.FC = () => {
             <TrackVisibility
                 once
             >
-                <Rosa isLeft={true} />
+                <RosaLeftAnimi />
             </TrackVisibility>
             <Header
                 title='Agende uma Consulta'
@@ -84,7 +90,7 @@ const LocalAtendimento: React.FC = () => {
             <TrackVisibility
                 once
             >
-                <Rosa isLeft={false} />
+                <RosaRightAnimi />
             </TrackVisibility>
             <BorderRight
                 alt='bordar'

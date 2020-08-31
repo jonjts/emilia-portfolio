@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import {
     Container,
@@ -8,9 +8,6 @@ import {
     ContentLabelContainer,
     ImageContainer,
 } from './styles';
-import {
-    Fade,
-} from "reactstrap";
 
 const itens = [{
     path: require('../../../assets/img/ana-1.png'),
@@ -26,12 +23,23 @@ interface IPresentation {
 
 const Presentation: React.FC<IPresentation> = ({ indexImage }) => {
 
+    const [animOne, setAnimOne] = useState('')
+    const [animTwo, setAnimTwo] = useState('')
+
+    useEffect(() => {
+        if (indexImage === 0) {
+            setAnimOne('animate__animated animate__fadeIn')
+            setAnimTwo('animate__animated animate__fadeOut')
+        } else {
+            setAnimTwo('animate__animated animate__fadeIn')
+            setAnimOne('animate__animated animate__fadeOut')
+        }
+    }, [indexImage])
 
     return (
         <Container>
             <LeftImage
                 className='animate__animated animate__fadeIn'
-                src={require('../../../assets/img/cover-left.svg')}
             />
             <ContentContainer>
                 <ContentLabelContainer
@@ -45,22 +53,17 @@ const Presentation: React.FC<IPresentation> = ({ indexImage }) => {
                     </h4>
                 </ContentLabelContainer>
                 <ImageContainer>
-                    <Fade
-                        in={indexImage === 0}
-                        timeout={300}
+                    <div
                     >
                         <img
+                            className={animOne}
                             src={itens[0].path}
                             alt={itens[0].alt} />
-                    </Fade>
-                    <Fade
-                        in={indexImage === 1}
-                        timeout={300}
-                    >
                         <img
+                            className={animTwo}
                             src={itens[1].path}
                             alt={itens[1].alt} />
-                    </Fade>
+                    </div>
                 </ImageContainer>
             </ContentContainer>
             <RightImage

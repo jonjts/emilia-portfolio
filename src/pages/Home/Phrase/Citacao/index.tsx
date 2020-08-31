@@ -10,7 +10,7 @@ import {
 
 const Citacao: React.FC<{ isVisible?: boolean }> = ({ isVisible }) => (
     isVisible ?
-        <Container className={isVisible ? 'animate__animated animate__fadeIn' : ''} >
+        <Container className={isVisible ? 'animate__animated animate__fadeInUp' : ''} >
             <div style={{ textAlign: 'center' }}>
                 <img
                     alt='aspas'
