@@ -8,15 +8,53 @@ export const Container = styled.div`
 
 
 
-export const RosesTop = styled.img`
-    position: absolute;
+export const Borboleta = styled.img`
     top: 0;
     left: 140px;
 
     @media (max-width: 767.98px) { 
-        display: none;
-        width: 100px
+        width: 100px;
+        position: inherit;
     }
+
+    @media (min-width: 580.98px) { 
+        position: absolute;
+    }
+    
+
+    @media (min-width: 991.98px) { 
+        position: absolute;
+    }
+`
+
+export const RosasLado = styled.img`
+    top: 50%;
+    right: 0;
+    position: absolute;
+
+    @media (max-width: 767.98px) { 
+        display: inherit;
+    }
+
+    @media (min-width: 580.98px) { 
+        display: none;
+    }
+
+`
+
+export const BorboletaContainer = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -31px;
+    margin-right: 16px;
+
+    @media (max-width: 767.98px) { 
+        img {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
 `
 
 export const RosesBottom = styled.img`

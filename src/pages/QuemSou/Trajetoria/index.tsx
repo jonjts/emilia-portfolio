@@ -6,13 +6,15 @@ import Header from '../../../components/Header'
 import Hexagono from '../../../components/Hexagono'
 import {
     Container,
-    RosesTop,
+    Borboleta,
     RosesBottom,
     DescricaoCurriculo,
     CurriculoContainer,
     CenterCurriculo,
     HexagonoContainer,
-    Line
+    Line,
+    BorboletaContainer,
+    RosasLado
 } from './styles';
 
 const curriculo = [
@@ -66,21 +68,27 @@ const Trajetoria: React.FC = () => {
     return (
         <SessionWave
         >
+            <BorboletaContainer>
+                <Borboleta
+                    alt='borboleta'
+                    src={require('../../../assets/img/borboleta.png')}
+                />
+            </BorboletaContainer>
             <Header
                 title='Currículo'
                 subtitle='Conheça minha trajetória'
             />
             <Container>
-                <RosesTop
-                    alt='borboleta'
-                    src={require('../../../assets/img/borboleta.png')}
-                />
                 <TrackVisibility
                     once
                     style={{ minWidth: 100, minHeight: 100 }}
                 >
                     <Itens />
                 </TrackVisibility>
+                <RosasLado
+                    alt='rosas'
+                    src={require('../../../assets/img/rosas-de-ladinho.png')}
+                />
                 <RosesBottom
                     alt='roses'
                     src={require('../../../assets/img/roses-bottom-right.png')}
