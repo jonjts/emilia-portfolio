@@ -63,6 +63,11 @@ export const ContentLabelContainer = styled.div`
     h1 {
         padding-bottom: 48px;
         color: #ED578A;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 104px;
+        line-height: 110%;
     }
 
     h4 {

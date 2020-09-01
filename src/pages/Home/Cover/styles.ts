@@ -57,11 +57,24 @@ export const ContentLabelContainer = styled.div`
     margin-top: 54px;
 
     h1 {
-        color: #ED578A
+        color: #ED578A;
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 104px;
+        line-height: 110%;
     }
 
     h4 {
-        color: #C982A7
+        color: #C982A7;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 150%;
+        /* identical to box height, or 48px */
+
+        letter-spacing: 0.5px;
     }
 
     @media (max-width: 575.98px) { 

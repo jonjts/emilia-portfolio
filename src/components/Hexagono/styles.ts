@@ -17,7 +17,7 @@ export const Forma = styled.div`
         z-index: 10;
         padding-top: 5px;
 
-        font-family: Galeere;
+        font-family: Playfair Display;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;

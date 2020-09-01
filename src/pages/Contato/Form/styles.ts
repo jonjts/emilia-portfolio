@@ -7,8 +7,13 @@ export const Container = styled.div`
   justify-content: right;
   flex-direction: column;
   h3 {
+    font-family: Playfair Display;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+
     letter-spacing: 0.15px;
     color: #ED578A;
   }

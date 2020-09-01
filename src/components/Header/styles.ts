@@ -7,12 +7,11 @@ export const TitleContainer = styled.div`
   align-items: center;
   
   .title{
-    font-family: Galeere;
+    font-family: Playfair Display;
     font-style: normal;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 32px;
     line-height: 36px;
-    text-align: center;
     /* identical to box height, or 112% */
 
     letter-spacing: 0.15px;

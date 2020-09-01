@@ -89,7 +89,7 @@ export const TitleContainer = styled.div`
   align-items: center;
   
   .title{
-    font-family: Galeere;
+    font-family: Playfair Display;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;

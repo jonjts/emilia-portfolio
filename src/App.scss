@@ -16,15 +16,15 @@ $pink: #ED578A;
 $border-radius: 2px;
 
 h1 {
-    font-family: Galeere;
+    font-family: Playfair Display;
     font-style: normal;
-    font-weight: 500;
-    font-size: 92px;
-    line-height: 120%;
+    font-weight: 900;
+    font-size: 104px;
+    line-height: 110%;
 }
 
 h2 {
-    font-family: Galeere;
+    font-family: Playfair Display;
     font-style: normal;
     font-weight: 500;
     font-size: 68px;
@@ -32,7 +32,7 @@ h2 {
 }
 
 h3 {
-    font-family: Galeere;
+    font-family: Playfair Display;
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
@@ -40,41 +40,14 @@ h3 {
 }
 
 h4 {
-    font-family: Montserrat;
+    font-family: Playfair Display;
     font-style: normal;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 32px;
-    line-height: 150%;
-}
-
-s1 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 150%;
-}
-
-s2 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 150%;
-    /* identical to box height, or 27px */
-
-    letter-spacing: 0.5px;
-}
-
-s3 {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 150%;
-    /* identical to box height, or 24px */
-
-    letter-spacing: 0.5px;
+    line-height: 36px;
+    /* identical to box height, or 112% */
+    
+    letter-spacing: 0.15px;
 }
 
 body {
