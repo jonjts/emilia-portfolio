@@ -3,6 +3,7 @@ import React from 'react';
 import Home from '../pages/Home'
 import Contato from '../pages/Contato'
 import QuemSou from "../pages/QuemSou";
+import Indicacoes from "../pages/Indicacoes";
 
 import {
     BrowserRouter as Router,
@@ -27,6 +28,9 @@ const Routes: React.FC = () => {
                 </Route>
                 <Route path="/contato" exact>
                     <Contato />
+                </Route>
+                <Route path="/indicacoes" exact>
+                    <Indicacoes />
                 </Route>
             </Switch>
         </Router>

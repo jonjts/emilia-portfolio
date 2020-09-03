@@ -28,7 +28,7 @@ const Navigation: React.FC<INavigation> = ({ navbar }) => {
                 <NavLink className='mr-2' href="/quem-sou">Quem Sou?</NavLink>
             </NavItem>
             <NavItem
-                active={location.pathname === '/indicadores'}
+                active={location.pathname === '/indicacoes'}
             >
                 <NavLink className='mr-2' href="/indicacoes">Indicações</NavLink>
             </NavItem>

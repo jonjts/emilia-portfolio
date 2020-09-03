@@ -20,11 +20,9 @@ export const InfoContainer = styled.div`
   h4 {
       font-family: Montserrat;
       font-style: normal;
-      font-weight: 300;
+      font-weight: normal;
+      font-size: 24px;
       line-height: 150%;
-      /* identical to box height, or 24px */
-
-      letter-spacing: 0.5px;
 
       /* Black */
 
