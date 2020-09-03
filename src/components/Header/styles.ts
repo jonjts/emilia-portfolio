@@ -16,6 +16,7 @@ export const TitleContainer = styled.div`
 
     letter-spacing: 0.15px;
 
+
     /* Black */
 
     color: #1E0D16;

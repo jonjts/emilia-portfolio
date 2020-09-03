@@ -88,6 +88,12 @@ export const ContentContainer = styled.div`
     flex: 1;
     margin-top: -4px;
     position: relative;
+
+    @media (max-width: 575.98px) { 
+       .row{
+           height: 670px;
+       }
+    }
 `
 
 

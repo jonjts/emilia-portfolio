@@ -41,7 +41,7 @@ const MyNavbar: React.FC = () => {
             className='sticky-top'
             color="light"
             light expand="md"
-            backgroundColor={(!isOpen && scrolled < 200) ? 'transparent' : '#fff'}
+            backgroundColor={(!isOpen && scrolled < 100) ? 'transparent' : '#fff'}
         >
             <Container >
                 <NavbarToggler onClick={toggle} />

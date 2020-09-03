@@ -13,11 +13,12 @@ export const Assinatura = styled.div`
 
     /* Primary/Pink-Light */
 
-    color: #F7B5CC;
+    color: #C982A7;
 `
 
 export const Hr = styled.hr`
-    background-color: #F7B5CC;
+    background-color: #C982A7;
+    width: 234px;
 `
 
 export const Footer = styled.div`
@@ -69,4 +70,8 @@ export const Content = styled.div`
     /* Black */
 
     color: #1E0D16;
+
+    @media (max-width: 575.98px) { 
+        font-size: 16px;
+    }
 `
