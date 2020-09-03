@@ -14,6 +14,7 @@ export const MensagemContainer = styled.div`
 
     h4 {
         margin-bottom: 48px;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: 300;
         font-size: 32px;
