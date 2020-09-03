@@ -17,7 +17,7 @@ export const ContentContainer = styled.div`
         height: 100%;
         justify-content: flex-end;
         img {
-            height: 400px;
+            height: 341px;
             margin-top: -72px;
         }
     }
@@ -78,7 +78,7 @@ export const ContentLabelContainer = styled.div`
     }
 
     @media (max-width: 575.98px) { 
-        width: 151px;
+        width: 128px;
         margin-top: 100px;
         h1 {
             font-size: 32px
@@ -161,11 +161,11 @@ export const LeftImage = styled.img`
     object-fit: contain;
     content: url('./assets/img/cover-left.svg');
 
-   
-
 
     @media (max-width: 767.98px) { 
-        width: 100%;
+        height: 432px;
+        left: -12px;
+        content: url('./assets/img/cover-left-sm.svg');
     }
 
 `
