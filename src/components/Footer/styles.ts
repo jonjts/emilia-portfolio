@@ -78,6 +78,7 @@ export const ImgBrand = styled.img`
 `
 
 export const Casal = styled.div`
+    cursor: pointer;
     display: flex;
     justify-content: flex-end;
     align-items: center;

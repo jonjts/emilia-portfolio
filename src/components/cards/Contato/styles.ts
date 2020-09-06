@@ -20,7 +20,7 @@ export const Container = styled.div<{ border?: 'top' | 'bottom' }>`
     }
 
     @media (max-width: 575.98px) { 
-        width: 366px;
+        min-width: 300px;
     }
 
     @media (min-width: 580.98px) { 

@@ -110,7 +110,7 @@ export const lista = new Array<ILista>(
                 detalhes: ['UniSaúde - (79) 3026-1414', 'Uniclin - (79) 3023-4040 / 99993-9990']
             },
             {
-                nome: 'Fernanda Sajuan',
+                nome: 'Fernanda Sanjuan',
                 detalhes: ['Cemise - (79) 3304-1000']
             },
         ]

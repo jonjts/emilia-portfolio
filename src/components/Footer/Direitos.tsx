@@ -11,6 +11,13 @@ import {
 } from 'reactstrap'
 
 const Direitos: React.FC = () => {
+
+
+    function handleSendEmailToUs(e: React.MouseEvent) {
+        e.preventDefault()
+        window.location.href = "mailto:casaldedesenvolvedores@gmail.com?subject=Contato&body=Olá, vi um trabalho de vocês e gostaria de ter algumas informações.";
+    }
+
     return (
         <DireitosContainer>
             <hr />
@@ -23,11 +30,13 @@ const Direitos: React.FC = () => {
                         xl='6'
                     >
                         <label>
-                            {`© ${(new Date()).getFullYear()} • Todos Direitos Reservados`}
+                            {`${(new Date()).getFullYear()} • Todos Direitos Reservados`}
                         </label>
                     </Col>
                     <Col className=''>
-                        <Casal>
+                        <Casal
+                            onClick={handleSendEmailToUs}
+                        >
                             <label>
                                 Criado por:
                             </label>

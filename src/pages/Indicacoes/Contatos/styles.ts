@@ -6,7 +6,7 @@ export const Container = styled.div`
 `;
 
 export const Lista = styled.div`
-  padding: 100px 16px 493px 16px;
+  margin: 100px 16px 493px 16px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -25,10 +25,14 @@ export const Lista = styled.div`
     /* Primary/Pink */
 
     color: #ED578A;
+
+    @media (max-width: 575.98px) { 
+        font-size: 32px;
+    }
   }
 
   @media (max-width: 575.98px) { 
-        padding: 85px 24px 190px 24px;
+        margin: 85px 24px 190px 24px;
     }
 `
 
