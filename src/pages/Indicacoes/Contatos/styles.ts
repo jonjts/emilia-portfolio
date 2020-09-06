@@ -6,7 +6,8 @@ export const Container = styled.div`
 `;
 
 export const Lista = styled.div`
-  margin: 100px 16px 493px 16px;
+  margin: 100px 16px 0px 16px;
+  padding: 0 0 493px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,7 +33,8 @@ export const Lista = styled.div`
   }
 
   @media (max-width: 575.98px) { 
-        margin: 85px 24px 190px 24px;
+        margin: 85px 24px 0 24px;
+        padding: 0 0 193px 0;
     }
 `
 
@@ -45,7 +47,7 @@ export const LineCurve = styled.img`
 
 
     @media (max-width: 575.98px) { 
-        top: 12%;
+        top: 3%;
     }
 
     @media (min-width: 580.98px) { 

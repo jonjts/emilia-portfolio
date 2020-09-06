@@ -70,7 +70,7 @@ export const Container = styled.div`
     width: 100%;
     z-index: 100;
     flex-direction: column;
-    margin-top: -250px;
+    margin-top: -262px;
     position: relative;
 
     @media (max-width: 575.98px) { 

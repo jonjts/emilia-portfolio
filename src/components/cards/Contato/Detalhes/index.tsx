@@ -20,7 +20,9 @@ const Detalhes: React.FC<{ contato: Contato }> = ({ contato }) => {
                     contato.detalhes.map((item, key) => (
                         <ContatoContainer
                             key={key}>
-                            <span className='circle' />
+                            <div>
+                                <div className='circle' />
+                            </div>
                             <label>
                                 {
                                     item
