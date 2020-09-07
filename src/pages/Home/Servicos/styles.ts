@@ -57,10 +57,11 @@ export const Option = styled.div`
 
 export const Container = styled.div`
   background-color: #FEF6F9;
+  margin-top: -1px;
 `;
 
 export const Content = styled.div`
-  min-height: 300px;
+    min-height: 300px;
   
     @media (max-width: 575.98px) { 
         padding: 40px 17px 40px 17px;

@@ -6,6 +6,25 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
 
+
+  @media (max-width: 575.98px) { 
+        
+    }
+
+    @media (min-width: 580.98px) { 
+        
+    }
+    
+
+    @media (min-width: 991.98px) { 
+        
+     }
+
+
+    @media (min-width: 1199.98px) {  
+        
+    }
+
 `;
 
 export const MensagemContainer = styled.div`

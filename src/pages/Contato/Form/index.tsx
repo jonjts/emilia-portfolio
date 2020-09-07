@@ -105,7 +105,7 @@ ${mensagem}
     return (
         <Container>
             {
-                sending == false ?
+                sending === false ?
                     <Sent onSendAgain={handleNewEmail} />
                     :
                     <>
