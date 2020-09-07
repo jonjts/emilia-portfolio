@@ -70,7 +70,8 @@ const Presentation: React.FC<IPresentation> = ({ indexImage }) => {
                 className='animate__animated animate__fadeIn'
                 src={require('../../../assets/img/folha.svg')}
             />
-        </Container>
+
+        </Container >
     )
 }
 

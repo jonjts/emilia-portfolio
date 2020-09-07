@@ -5,7 +5,7 @@ export const Container = styled.div`
 `
 
 export const DireitosContainer = styled.div`
-    padding: 72px 58px 0px 58px;
+    padding: 0px 58px 0px 58px;
 
     @media (max-width: 575.98px) { 
         padding-top: 0px;

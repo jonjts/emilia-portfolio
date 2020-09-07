@@ -34,6 +34,11 @@ export const Container = styled.div`
     @media (max-width: 575.98px) { 
         width: 256px;
         height: 371px;
+
+        img {
+            width: 70px;
+            height: 48px;
+        }
     }
 
 
@@ -73,5 +78,6 @@ export const Content = styled.div`
 
     @media (max-width: 575.98px) { 
         font-size: 16px;
+        padding-top: 20px;
     }
 `

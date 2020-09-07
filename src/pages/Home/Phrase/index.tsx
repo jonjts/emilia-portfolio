@@ -14,32 +14,35 @@ import {
 const Phrase: React.FC = () => {
     return (
         <SessionWave
+            wavePath='none'
             footerWavePath={require('./footer.svg')}
+            styleContainer={{ zIndex: 200 }}
+            backgroundColor='transparent'
         >
-            <ContentContainer>
-                <Row>
-                    <Col
-                        sm={12}
-                        md={12}
-                        lg={6}
-                        xl={6}
-                    >
-                        <ImageA
-                            alt='Ana'
-                            src={require('../../../assets/img/ana-a-1.png')}
-                        />
-                    </Col>
-                    <Col className='align-items-center flex-column d-flex'>
-                        <TrackVisibility
-                            once>
-                            <Citacao />
-                        </TrackVisibility>
-                    </Col>
-                </Row>
-                <Roses
-                    src={require('../../../assets/img/roses.png')}
-                    alt='roses'
-                />
+            <ContentContainer >
+                    <Row>
+                        <Col
+                            sm={12}
+                            md={12}
+                            lg={6}
+                            xl={6}
+                        >
+                            <ImageA
+                                alt='Ana'
+                                src={require('../../../assets/img/ana-a-1.png')}
+                            />
+                        </Col>
+                        <Col className='align-items-center flex-column d-flex justify-content-center citacao'>
+                            <TrackVisibility
+                                once>
+                                <Citacao />
+                            </TrackVisibility>
+                        </Col>
+                    </Row>
+                    <Roses
+                        src={require('../../../assets/img/roses.png')}
+                        alt='roses'
+                    />
             </ContentContainer>
         </SessionWave>
     )

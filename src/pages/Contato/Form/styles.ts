@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: right;
   flex-direction: column;
+
   h3 {
     font-family: Playfair Display;
     font-style: normal;
@@ -17,6 +18,10 @@ export const Container = styled.div`
     letter-spacing: 0.15px;
     color: #ED578A;
   }
+
+  @media (max-width: 575.98px) { 
+        width: auto;
+    }
 `;
 
 export const InputsContainer = styled.div`

@@ -9,7 +9,7 @@ import {
 } from './styles';
 
 const WaveSession: React.FC<{
-    wavePath?: string,
+    wavePath?: string | 'none',
     backgroundColor?: string,
     zIndex?: number,
     styleContainer?: CSSProperties,
@@ -24,14 +24,17 @@ const WaveSession: React.FC<{
 }) => {
         return (
             <Container style={styleContainer} >
-                <WaveContainer
-                    style={{ zIndex }}
-                >
-                    <Wave
-                        alt='wave'
-                        src={wavePath}
-                    />
-                </WaveContainer>
+                {
+                    wavePath && wavePath !== 'none' &&
+                    <WaveContainer
+                        style={{ zIndex }}
+                    >
+                        <Wave
+                            alt='wave'
+                            src={wavePath}
+                        />
+                    </WaveContainer>
+                }
                 <ContentContainer
                     backgroundColor={backgroundColor}
                 >

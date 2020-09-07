@@ -6,7 +6,7 @@ export const ContentContainer = styled.div`
     align-items: center;
     flex-direction: row;
     width: 100%;
-    z-index: 100;
+    z-index: 200;
 
     img{
         animation-duration: 2s;
@@ -55,6 +55,7 @@ export const ContentLabelContainer = styled.div`
     justify-content: center;
     display: flex;
     margin-top: 54px;
+    z-index: 100;
 
     h1 {
         color: #ED578A;
@@ -91,7 +92,8 @@ export const ContentLabelContainer = styled.div`
 
     @media (min-width: 767.98px) { 
         width: 437px;
-      
+        margin-top: -195px;
+        margin-left: 127px;
         h1 {
             font-size: 92px;
         }
@@ -159,6 +161,8 @@ export const LeftImage = styled.img`
     position: absolute;
     left: 0;
     object-fit: contain;
+    
+    
     content: url('./assets/img/cover-left.svg');
 
 
@@ -232,4 +236,31 @@ export const ImageContainer = styled.div`
             left: 50%;
         }
     }
+`
+
+
+export const Wave = styled.img`
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        z-index: 30;
+
+        @media (max-width: 575.98px) { 
+            
+        }
+
+
+        @media (min-width: 767.98px) { 
+            
+        }
+
+
+        @media (min-width: 991.98px) { 
+            
+        }
+
+
+        @media (min-width: 1199.98px) {  
+            
+        }
 `

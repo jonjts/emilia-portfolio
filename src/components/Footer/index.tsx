@@ -3,11 +3,11 @@ import React from 'react';
 import Map from '../Map'
 import {
     Container,
-    NavigationContainer,
+    // NavigationContainer,
     BranContainer,
     ImgBrand,
 } from './styles';
-import Navigation from "../Navbar/Navigation";
+// import Navigation from "../Navbar/Navigation";
 import LocalAtendimento from "./LocalAtendimento";
 import Direitos from "./Direitos";
 
@@ -27,9 +27,9 @@ const Footer: React.FC = () => {
                     src={require('../../assets/img/brand/logo-with-name.svg')}
                     alt='logo'
                 />
-                <NavigationContainer>
+                {/* <NavigationContainer>
                     <Navigation />
-                </NavigationContainer>
+                </NavigationContainer> */}
             </BranContainer>
             <Direitos />
         </Container >
