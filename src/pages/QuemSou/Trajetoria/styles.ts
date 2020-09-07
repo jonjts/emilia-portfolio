@@ -84,6 +84,7 @@ export const DescricaoCurriculo = styled.label`
 
         @media (max-width: 575.98px) { 
             margin-bottom: 20px;
+            padding-left: 8px;
         }
 
         @media (min-width: 580.98px) { 
@@ -126,6 +127,7 @@ export const HexagonoContainer = styled.div`
 
 export const Line = styled.hr`
     border: 1px solid #F7B5CC;
+    background-color: #F7B5CC;
     transform: rotate(-90deg);
     width: 80px;
 

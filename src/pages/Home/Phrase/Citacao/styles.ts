@@ -19,10 +19,14 @@ export const Assinatura = styled.div`
 export const Hr = styled.hr`
     background-color: #C982A7;
     width: 234px;
+
+    @media (max-width: 575.98px) { 
+        width: 180px;
+    }
 `
 
 export const Footer = styled.div`
-    padding: 0 11px 0 11px;
+    padding: 24px 11px 0 11px;
 `
 
 export const Container = styled.div`
@@ -67,7 +71,6 @@ export const Content = styled.div`
     font-size: 24px;
     line-height: 150%;
     padding-top: 55px;
-    padding-bottom: 48px;
     /* or 36px */
 
     text-align: center;
@@ -78,6 +81,6 @@ export const Content = styled.div`
 
     @media (max-width: 575.98px) { 
         font-size: 16px;
-        padding-top: 20px;
+        padding-top: 24px;
     }
 `
