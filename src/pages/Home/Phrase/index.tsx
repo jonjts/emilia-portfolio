@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import TrackVisibility from 'react-on-screen';
 import SessionWave from '../../../components/sessions/Wave'
@@ -8,13 +8,38 @@ import {
     ImageA,
     Row,
     Col,
-    Roses,
     ImageContainer,
     RosesBack,
     RosesFront
 } from './styles';
 
-const Phrase: React.FC = () => {
+const itens = [{
+    path: require('../../../assets/img/ana-a-1-round.png'),
+    alt: 'Dr. Ana'
+}, {
+    path: require('../../../assets/img/ana-a-2-round.png'),
+    alt: 'Dr. Ana'
+}]
+
+interface IPresentation {
+    indexImage: number
+}
+
+const Phrase: React.FC<IPresentation> = ({ indexImage }) => {
+
+    const [animOne, setAnimOne] = useState('')
+    const [animTwo, setAnimTwo] = useState('')
+
+    useEffect(() => {
+        if (indexImage === 0) {
+            setAnimOne('animate__animated animate__fadeIn')
+            setAnimTwo('animate__animated animate__fadeOut')
+        } else {
+            setAnimTwo('animate__animated animate__fadeIn')
+            setAnimOne('animate__animated animate__fadeOut')
+        }
+    }, [indexImage])
+
     return (
         <SessionWave
             wavePath='none'
@@ -37,10 +62,16 @@ const Phrase: React.FC = () => {
                                 src={require('../../../assets/img/roses-back.png')}
                             />
                             <ImageA
+                                className={animOne}
                                 alt='Ana'
-                                src={require('../../../assets/img/ana-a-1-round.png')}
+                                src={itens[0].path}
                             />
-                             <RosesFront
+                            <ImageA
+                                className={animTwo}
+                                alt='Ana'
+                                src={itens[1].path}
+                            />
+                            <RosesFront
                                 alt='Rosas'
                                 src={require('../../../assets/img/roses-front.png')}
                             />
@@ -53,7 +84,7 @@ const Phrase: React.FC = () => {
                         </TrackVisibility>
                     </Col>
                 </Row>
-               
+
             </ContentContainer>
         </SessionWave>
     )

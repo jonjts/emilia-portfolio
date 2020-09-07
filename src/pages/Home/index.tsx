@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         <Container>
             <NavBar />
             <Cover indexImage={indexImage} />
-            <Phrase />
+            <Phrase indexImage={indexImage}/>
             <Servicos />
             <Antendimento />
             <Footer />
