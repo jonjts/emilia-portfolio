@@ -120,13 +120,13 @@ export const ContentContainer = styled.div`
             margin-top: 10px;
             height: 643px;
         }
-        height: auto;
+        height: 944px;
      }
 
 
     @media (min-width: 1199.98px) {  
         .row{
-            height: 800px;
+            height: 100%;
         }
         
     }
