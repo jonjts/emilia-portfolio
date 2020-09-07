@@ -70,11 +70,12 @@ export const Container = styled.div`
     width: 100%;
     z-index: 100;
     flex-direction: column;
-    margin-top: -262px;
+    margin-top: -150px;
     position: relative;
 
     @media (max-width: 575.98px) { 
         min-height: 522px;
+        margin-top: -250px;
     }
 
 

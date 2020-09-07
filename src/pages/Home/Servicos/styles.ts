@@ -57,7 +57,7 @@ export const Option = styled.div`
 
 export const Container = styled.div`
   background-color: #FEF6F9;
-  margin-top: -1px;
+  margin-top: -5px;
 `;
 
 export const Content = styled.div`
