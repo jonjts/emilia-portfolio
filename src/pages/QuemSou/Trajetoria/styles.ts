@@ -94,6 +94,7 @@ export const DescricaoCurriculo = styled.label`
 
         @media (min-width: 991.98px) { 
             flex: 6;
+            margin-left: 32px;
             /* margin-bottom: 20px;
             margin-top: 0px; */
         }
@@ -116,12 +117,12 @@ export const HexagonoContainer = styled.div`
     display: flex;
     flex-direction: column;
     @media (min-width: 991.98px) { 
-        flex: 4;
+        flex: .1;
      }
 
 
     @media (min-width: 1199.98px) {  
-        flex: 4;
+        flex: .1;
     }
 `
 
