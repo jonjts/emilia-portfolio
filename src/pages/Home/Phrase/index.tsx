@@ -8,7 +8,10 @@ import {
     ImageA,
     Row,
     Col,
-    Roses
+    Roses,
+    ImageContainer,
+    RosesBack,
+    RosesFront
 } from './styles';
 
 const Phrase: React.FC = () => {
@@ -20,29 +23,37 @@ const Phrase: React.FC = () => {
             backgroundColor='transparent'
         >
             <ContentContainer >
-                    <Row>
-                        <Col
-                            sm={12}
-                            md={12}
-                            lg={6}
-                            xl={6}
-                        >
+                <Row>
+                    <Col
+                        className='align-items-center flex-column d-flex justify-content-center col'
+                        sm={12}
+                        md={12}
+                        lg={6}
+                        xl={6}
+                    >
+                        <ImageContainer>
+                            <RosesBack
+                                alt='Rosas'
+                                src={require('../../../assets/img/roses-back.png')}
+                            />
                             <ImageA
                                 alt='Ana'
-                                src={require('../../../assets/img/ana-a-1.png')}
+                                src={require('../../../assets/img/ana-a-1-round.png')}
                             />
-                        </Col>
-                        <Col className='align-items-center flex-column d-flex justify-content-center citacao'>
-                            <TrackVisibility
-                                once>
-                                <Citacao />
-                            </TrackVisibility>
-                        </Col>
-                    </Row>
-                    <Roses
-                        src={require('../../../assets/img/roses.png')}
-                        alt='roses'
-                    />
+                             <RosesFront
+                                alt='Rosas'
+                                src={require('../../../assets/img/roses-front.png')}
+                            />
+                        </ImageContainer>
+                    </Col>
+                    <Col className='align-items-center flex-column d-flex justify-content-center citacao'>
+                        <TrackVisibility
+                            once>
+                            <Citacao />
+                        </TrackVisibility>
+                    </Col>
+                </Row>
+               
             </ContentContainer>
         </SessionWave>
     )

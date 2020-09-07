@@ -102,6 +102,7 @@ export const ContentContainer = styled.div`
 
     @media (max-width: 575.98px) { 
        .row{
+           padding-top: 56px;
            height: 670px;
        }
     }
@@ -118,9 +119,16 @@ export const ContentContainer = styled.div`
     @media (min-width: 991.98px) { 
         .citacao {
             margin-top: 10px;
-            height: 643px;
+            align-items: flex-start !important;
+            margin-left: 48px;
         }
-        height: 944px;
+        .row{
+            height: 100%;
+        }
+        .col{
+            margin-top: -61px !important;
+        }
+        height: 777px;
      }
 
 
@@ -128,14 +136,13 @@ export const ContentContainer = styled.div`
         .row{
             height: 100%;
         }
+        height: 937px;
         
     }
 `
 
-export const ImageA = styled.img`
-    width: 877px;
-    height: 727px;
-    
+export const ImageContainer = styled.div`
+    position: relative;
 
     @media (max-width: 575.98px) { 
        height: 200px;
@@ -153,10 +160,46 @@ export const ImageA = styled.img`
 
 
     @media (min-width: 991.98px) { 
-       height: 100%;
+        height: 490px;
        width: 589px;
        align-self: center;
        margin-top: 0;
+       align-self: flex-end;
+     }
+
+
+    @media (min-width: 1199.98px) {  
+      height: 490px;
+      width: 590px;
+      margin-top: -10px;
+    }
+`
+
+export const ImageA = styled.img`
+    width: 877px;
+    height: 727px;
+    z-index: 10;
+    position: absolute;
+    
+
+    @media (max-width: 575.98px) { 
+       height: 200px;
+       width: 250px;
+       margin-top: 0;
+       z-index: 10;
+    }
+
+
+    @media (min-width: 767.98px) { 
+        height: 300px;
+        width: 300px;
+    }
+
+
+    @media (min-width: 991.98px) { 
+        height: 100%;
+        width: 100%;
+        margin-top: 0;
      }
 
 
@@ -165,4 +208,36 @@ export const ImageA = styled.img`
         width: 100%;
         margin-top: 0;
     }
+`
+
+export const RosesBack = styled.img`
+    z-index: 9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: 575.98px) { 
+      height: 100%;
+    }
+
+    @media (min-width: 767.98px) { 
+        height: 100%;
+    }
+
+`
+
+export const RosesFront = styled.img`
+    z-index: 11;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 575.98px) { 
+      width: 100%;
+    }
+
+    @media (min-width: 767.98px) { 
+        width: 100%;;
+    }
+
 `

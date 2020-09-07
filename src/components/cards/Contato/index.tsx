@@ -39,10 +39,11 @@ const ContatoCard: React.FC<IContato> = ({ borders, item }) => {
                 <label>
                     {item.categoria}
                 </label>
-                <i
-                    className={isOpen ? "fas fa-angle-up" : "fas fa-angle-down"}
-                    style={{ color: '#ED578A', fontSize: 24 }}
-                ></i>
+                <img
+                    alt='arrow'
+                    src={isOpen ? require('../../../assets/img/icons/arrow-up.svg') : require('../../../assets/img/icons/arrow-down.svg')}
+                />
+
             </Header>
             <Collapse isOpen={isOpen}>
                 <Card>
@@ -55,7 +56,7 @@ const ContatoCard: React.FC<IContato> = ({ borders, item }) => {
                                         key={key}
                                     />
                                     {
-                                        key !== (item?.contatos?.length -1 ) &&
+                                        key !== (item?.contatos?.length - 1) &&
                                         <div
                                             style={{ height: 16 }}
                                         />

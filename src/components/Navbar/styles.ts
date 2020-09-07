@@ -9,7 +9,7 @@ export const Navbar = styled(RootNavbar) <{ backgroundColor: string }>`
     background-color: ${props => props.backgroundColor} !important;
     position: fixed;
     top: 0;
-    width: 100%
+    width: 100%;
 `
 
 export const Container = styled(RootContainer)`
@@ -25,6 +25,14 @@ export const Container = styled(RootContainer)`
             background:#F7B5CC;
             color:#F7B5CC;
             border-radius: 50%;
+        }
+    }
+
+    .navbar-collapse {
+        @media (min-width: 991.98px) {  
+            position: absolute ;
+            right: 50%;
+            left: 50%;
         }
     }
 
@@ -46,6 +54,10 @@ export const Container = styled(RootContainer)`
 
         @media (max-width: 767.98px) { 
             flex-direction: row;
+        }
+
+        @media (min-width: 991.98px) {  
+            width: 125px;
         }
 
     }
