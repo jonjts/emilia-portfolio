@@ -64,9 +64,11 @@ const Atendimento: React.FC = () => {
                     subtitle='Como funcionam os atendimentos'
                 />
             </HeaderContainer>
-            <TrackVisibility once>
+            <TrackVisibility
+                partialVisibility
+                once>
                 <Information />
-                
+
             </TrackVisibility>
 
         </Container>

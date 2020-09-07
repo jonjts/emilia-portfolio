@@ -135,6 +135,7 @@ const Servicos: React.FC = () => {
             <Content>
                 <TrackVisibility
                     once
+                    partialVisibility
                 >
                     <RowContent />
                 </TrackVisibility>

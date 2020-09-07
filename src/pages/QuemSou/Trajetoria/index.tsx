@@ -81,6 +81,7 @@ const Trajetoria: React.FC = () => {
             <Container>
                 <TrackVisibility
                     once
+                    partialVisibility
                     style={{ minWidth: 100, minHeight: 100 }}
                 >
                     <Itens />

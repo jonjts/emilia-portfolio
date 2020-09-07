@@ -79,6 +79,7 @@ const Phrase: React.FC<IPresentation> = ({ indexImage }) => {
                     </Col>
                     <Col className='align-items-center flex-column d-flex justify-content-center citacao'>
                         <TrackVisibility
+                            partialVisibility
                             once>
                             <Citacao />
                         </TrackVisibility>
