@@ -36,6 +36,21 @@ export const Contato = styled.div`
     flex-direction: row;
     align-items: center;
 
+    label {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        letter-spacing: 0.5px;
+
+        /* Black */
+
+        color: #1E0D16;
+    }
+
     .circle{
         background: #F7B5CC;
         border-radius: 50%;

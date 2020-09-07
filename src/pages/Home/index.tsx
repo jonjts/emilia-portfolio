@@ -17,7 +17,7 @@ const Home: React.FC = () => {
     useEffect(() => {
         setTimeout(() => {
             setIndexImage(indexImage === 0 ? 1 : 0)
-        }, 10000)
+        }, 6000)
     }, [indexImage])
 
 
