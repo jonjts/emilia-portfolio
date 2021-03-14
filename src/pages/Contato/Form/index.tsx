@@ -44,7 +44,7 @@ const ContatoForm: React.FC = () => {
 
     async function sendEmail() {
         try {
-            await axios.post(`${process.env.REACT_APP_BASE_URL}/send-email`,
+            await axios.post(`api/send-email`,
                 {
                     subject: `${nome} <${email}>`,
                     assunto: assunto,
