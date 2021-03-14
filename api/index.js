@@ -1,6 +1,6 @@
 const express = require("express");
-require('dotenv').config()
-const nodemailer = require('nodemailer');
+//require('dotenv').config()
+//const nodemailer = require('nodemailer');
 // const bodyParser = require('body-parser');
 // const cors = require('cors')
 
@@ -13,7 +13,7 @@ const app = express();
 //app.use(express.static(`${baseDir}`));
 
 app.get('/', async (req, res) => {
-  return res.send('GET teams data.');
+  res.send('GET teams data.');
 });
 
 app.post('/send-email', async (req, res) => {
@@ -29,9 +29,9 @@ app.post('/send-email', async (req, res) => {
     await wrapedSendMail(mailOptions)
   } catch (error) {
     console.log(error)
-    return res.sendStatus(400);
+    res.sendStatus(400);
   }
-  return res.sendStatus(200);
+  res.sendStatus(200);
 });
 
 //app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
