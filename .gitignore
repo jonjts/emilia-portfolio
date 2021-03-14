@@ -28,3 +28,4 @@ package-lock.json
 .env
 .vscode
 /.sass-cache
+.vercel
