@@ -13,7 +13,7 @@ app.use(cors())
 
 
 app.get('/', async (req, res) => {
-  res.send(`it's ok`)
+  return res.send(`it's ok`);
 });
 
 module.exports = app
