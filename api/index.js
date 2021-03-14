@@ -69,3 +69,5 @@ async function wrapedSendMail(mailOptions) {
 
   })
 }
+
+module.exports = app
