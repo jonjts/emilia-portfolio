@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 async function wrapedSendMail(mailOptions) {
   return new Promise((resolve, reject) => {
@@ -40,7 +40,7 @@ export default async (req, res) => {
     await wrapedSendMail(mailOptions)
   } catch (error) {
     console.log(error)
-    res.sendStatus(400);
+    res.status = 400;
   }
-  res.sendStatus(200);
+  res.send({ message: 'Email enviado' });
 }
