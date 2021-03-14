@@ -1,3 +1,4 @@
-module.exports = (req, res) => {
-    return res.send('Hello world from the /api route!')
-}
+export default (req, res) => {
+  res.statusCode = 200;
+  res.send({ message: "helloWorld" });
+};
