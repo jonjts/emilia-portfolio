@@ -15,7 +15,7 @@ app.use(cors())
 app.use(express.static(`${baseDir}`));
 
 
-app.post('/send-email', async (req, res) => {
+app.post('api/send-email', async (req, res) => {
   const data = req.body
 
   try {
@@ -35,7 +35,7 @@ app.post('/send-email', async (req, res) => {
 
 })
 
-app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
+//app.get("*", (req, res) => res.sendFile("index.html", { root: baseDir }));
 
 app.listen(port || 4000, () =>
   console.log(`Servidor subiu com sucesso em http://localhost:${port}`)
