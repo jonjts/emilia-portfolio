@@ -15,7 +15,7 @@ const Map: React.FC<IMap> = ({ width, height }) => {
 
     return (
         <LoadScript
-            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_kEY}
+            googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_kEY as string}
         >
             <GoogleMap
                 mapContainerStyle={{ width, height }}
